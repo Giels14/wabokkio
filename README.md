@@ -82,7 +82,7 @@ npx wrangler pages dev dist
    | Naam | Type | Waarde |
    |---|---|---|
    | `RESEND_API_KEY` | Secret | API-key uit Resend (alleen "sending access", domein send.wabokkio.nl) |
-   | `MAIL_FROM` | Variable | `Wabokkio <aanvraag@send.wabokkio.nl>` |
+   | `MAIL_FROM` | Variable | `Wabokkio <aanvraag@wabokkio.nl>` |
    | `MAIL_TO` | Variable | `travel@wabokkio.nl` |
    | `TURNSTILE_SECRET_KEY` | Secret | Turnstile secret key (leeg = check uit) |
    | `PUBLIC_TURNSTILE_SITE_KEY` | Build-variable | Turnstile site key; zonder deze waarde wordt de widget niet getoond |

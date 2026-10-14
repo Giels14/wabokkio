@@ -10,5 +10,5 @@ database_id = "baaa35b7-d8b4-4e62-add6-56b20359240d"
 
 [vars]
 MAIL_TO = "travel@wabokkio.nl"
-MAIL_FROM = "Wabokkio <aanvraag@send.wabokkio.nl>"
+MAIL_FROM = "Wabokkio <aanvraag@wabokkio.nl>"
 # Secrets NIET hier: RESEND_API_KEY en TURNSTILE_SECRET_KEY via dashboard of `wrangler pages secret put`

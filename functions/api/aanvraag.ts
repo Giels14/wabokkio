@@ -9,7 +9,7 @@
 interface Env {
   DB: D1Database;
   RESEND_API_KEY?: string;
-  MAIL_FROM: string; // bv. "Wabokkio <aanvraag@send.wabokkio.nl>"
+  MAIL_FROM: string; // bv. "Wabokkio <aanvraag@wabokkio.nl>"
   MAIL_TO?: string; // standaard travel@wabokkio.nl
   TURNSTILE_SECRET_KEY?: string; // leeg = Turnstile-check uit
 }
