@@ -1,12 +1,17 @@
 ---
 import { Image } from 'astro:assets';
-import type { Resort } from '../data/site';
+import { destinationPhotos, type Resort } from '../data/site';
 import { photo } from '../data/photos';
 import { t, r, type Lang } from '../i18n';
 const { r: resort, lang } = Astro.props as { r: Resort; lang: Lang };
 const d = t(lang);
-const img = photo(`resorts/${resort.slug}`);
-const alt = `${resort.name}, ${resort.place[lang]} (${resort.country[lang]})`;
+// 1) eigen resortfoto (resorts/<slug>) 2) algemene bestemmingsfoto (destinations/<dest>) 3) gradient
+const own = photo(`resorts/${resort.slug}`);
+const destImg = !own && resort.dest ? photo(`destinations/${resort.dest}`) : undefined;
+const img = own ?? destImg;
+const alt = own
+  ? `${resort.name}, ${resort.place[lang]}`
+  : destImg && resort.dest ? `${destinationPhotos[resort.dest][lang]} (${d.resorts.moodPhoto})` : '';
 ---
 <article class="card">
   <div class={`card-img g-${resort.slug}`} role={img ? undefined : 'img'} aria-label={img ? undefined : `${d.resorts.illustration} ${resort.name}`}>

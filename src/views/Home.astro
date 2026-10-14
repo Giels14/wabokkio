@@ -51,7 +51,7 @@ const feature = photo('feature');
           {d.how.steps.map(([h, p], i) => <li><span class="step-n">{i + 1}</span><h3>{h}</h3><p>{p}</p></li>)}
         </ol>
       </div>
-      {feature && <Image src={feature} alt={d.hero.imageAlt} widths={[500, 1000]} sizes="(max-width: 960px) 100vw, 480px" loading="lazy" class="feature-photo" />}
+      {feature && <Image src={feature} alt={d.hero.featureAlt} widths={[500, 1000]} sizes="(max-width: 960px) 100vw, 480px" loading="lazy" class="feature-photo" />}
     </div>
   </section>
 

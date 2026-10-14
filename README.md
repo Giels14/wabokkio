@@ -26,10 +26,10 @@ Er staan nergens prijzen op de site: alles is "op aanvraag" / "Vraag prijs aan".
 
 ## Talen (NL/EN)
 - Nederlands is standaard op `/`, Engels staat onder `/en/` (Astro i18n, `prefixDefaultLocale: false`). Elke pagina heeft `<html lang>`, canonical en hreflang `nl`, `en` en `x-default` (= nl).
-- **Engelse teksten zijn CONCEPT** (zelf geschreven). Vervangen door de vertaling van de designer op deze plekken:
+- Engelse teksten (definitief, van de designer) staan op deze plekken:
   - `src/i18n/en.ts` – alle knoppen, formulier, home, foutmeldingen in de browser
   - `src/data/site.ts` – de `en:`-velden van de resortkaarten
-  - `src/content/en/about.md`, `privacy.md`, `terms.md` (haal de regel "DRAFT translation" weg)
+  - `src/content/en/about.md`, `privacy.md`, `terms.md`
   - `functions/api/aanvraag.ts` – Engelse foutmeldingen en bevestigingsmail (zoek op `en ?`)
 - Engelse privacy en voorwaarden tonen bovenaan: "This is a translation. In case of differences, the Dutch version prevails." met een link naar de Nederlandse pagina.
 - Het formulier stuurt `taal` mee; de function antwoordt in die taal, stuurt de bevestiging in die taal en zet `[EN]` in het onderwerp van de notificatie. De taal wordt in D1 opgeslagen (kolom `taal`).
@@ -42,6 +42,7 @@ Zet foto's in `src/assets/photos/` (jpg, jpeg, webp, avif of png; liefst minsten
 | `hero` | Achtergrond hero homepage (tekst staat links, dus onderwerp liefst rechts) |
 | `feature` | Foto naast "Hoe het werkt" |
 | `bestemmingen` | Header van de pagina Bestemmingen |
+| `destinations/<bestemming>` | Algemene sfeerfoto per bestemming (mallorca, algarve, belek-turkije, marokko-taghazout, veluwe), gebruikt op resortkaarten zonder eigen foto. Koppeling via `dest` in `src/data/site.ts`; alt-tekst zegt expliciet "sfeerbeeld, niet het resort" |
 | `resorts/ikos-porto-petro` | Kaart Ikos Porto Petro |
 | `resorts/martinhal-sagres` | Kaart Martinhal Sagres |
 | `resorts/hof-van-saksen` | Kaart Hof van Saksen |
@@ -52,7 +53,7 @@ Zet foto's in `src/assets/photos/` (jpg, jpeg, webp, avif of png; liefst minsten
 | `resorts/fairmont-taghazout-bay` | Kaart Fairmont Taghazout Bay |
 | `resorts/paradis-plage` | Kaart Paradis Plage Surf Yoga & Spa |
 
-Voorbeeld: `src/assets/photos/resorts/martinhal-sagres.jpg`. Daarna `npm run build` en opnieuw deployen.
+Voorrang per kaart: eigen resortfoto → bestemmingsfoto → gradient. Voorbeeld: `src/assets/photos/resorts/martinhal-sagres.jpg`. Bronnen en licenties staan in `src/assets/photos/CREDITS.md` en op `/fotocredits/` (`src/data/credits.ts`); werk beide bij bij nieuwe foto's. Daarna `npm run build` en opnieuw deployen.
 
 ## Lokaal
 ```bash
@@ -98,7 +99,7 @@ npx wrangler pages dev dist
 - Per kamer aantal volwassenen en kinderen; per kind alleen de leeftijd (geen namen/geboortedata).
 - Werkt met JavaScript (fetch → `/bedankt/`) en zonder (gewone POST → 303 naar `/bedankt/`).
 - Honeypotveld `website`: bots krijgen "ok" maar er wordt niets opgeslagen of gemaild.
-- Na opslaan in D1: notificatie naar `MAIL_TO` (reply-to = klant) en bevestiging naar de familie ("reactie binnen 2 werkdagen"). Mislukt Resend, dan staat de aanvraag wél in D1 en wordt de fout gelogd.
+- Na opslaan in D1: notificatie naar `MAIL_TO` (reply-to = klant) en bevestiging naar de familie ("reactie binnen 5 werkdagen"). Mislukt Resend, dan staat de aanvraag wél in D1 en wordt de fout gelogd.
 - Aanvragen bekijken: `npx wrangler d1 execute wabokkio --remote --command "SELECT * FROM aanvragen ORDER BY created_at DESC LIMIT 20"`.
 
 ## DNS-plan

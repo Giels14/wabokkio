@@ -90,3 +90,4 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);ba
 @media (max-width:960px){.how-grid{grid-template-columns:1fr}}
 .logo-stacked-white img{height:120px}
 .btn-sm{white-space:nowrap}@media (max-width:640px){nav{gap:10px}.site-header .btn-sm{padding:.45em .8em;font-size:.82rem}.logo img{height:32px}}
+.credits{width:100%;border-collapse:collapse;font-size:.92rem;margin:1em 0}.credits th,.credits td{text-align:left;padding:.5em;border-bottom:1px solid #e6eaf3}

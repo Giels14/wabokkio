@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { photoCredits } from '../data/credits';
+import { t, type Lang } from '../i18n';
+const { lang } = Astro.props as { lang: Lang };
+const d = t(lang); const c = d.creditsPage;
+---
+<Base lang={lang} page="credits" title={d.pages.credits}>
+  <section class="section"><div class="wrap prose">
+    <h1>{d.pages.credits}</h1>
+    <p>{c.intro}</p>
+    <table class="credits">
+      <thead><tr><th>{c.photo}</th><th>{c.by}</th><th>{c.license}</th></tr></thead>
+      <tbody>{photoCredits.map((p) => <tr><td><a href={p.url} rel="noopener">{p.subject[lang]}</a></td><td>{p.by}</td><td><a href={p.licenseUrl} rel="noopener">{p.license}</a></td></tr>)}</tbody>
+    </table>
+    <p class="hint">{c.note}</p>
+  </div></section>
+</Base>

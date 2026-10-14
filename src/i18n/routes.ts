@@ -8,6 +8,7 @@ export const routes = {
   about: { nl: '/over-ons/', en: '/en/about/' },
   privacy: { nl: '/privacyverklaring/', en: '/en/privacy/' },
   terms: { nl: '/algemene-voorwaarden/', en: '/en/terms/' },
+  credits: { nl: '/fotocredits/', en: '/en/photo-credits/' },
   thanks: { nl: '/bedankt/', en: '/en/thank-you/' },
   notFound: { nl: '/404', en: '/en/404' },
 } as const;

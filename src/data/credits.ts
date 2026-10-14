@@ -1,0 +1,11 @@
+// Bron: src/assets/photos/CREDITS.md. Werk dit bij als je foto's toevoegt of vervangt.
+export const photoCredits = [
+  { file: 'hero.jpg', subject: { nl: 'Vader met peuter bij een zwembad', en: 'Father with a toddler at a pool' }, by: 'Yan Krukau', url: 'https://www.pexels.com/photo/happy-father-with-baby-at-resort-swimming-pool-4965410/', license: 'Pexels', licenseUrl: 'https://www.pexels.com/license/' },
+  { file: 'feature.jpg', subject: { nl: 'Kinderen bouwen zandkastelen', en: 'Children building sandcastles' }, by: 'Kindel Media', url: 'https://www.pexels.com/photo/children-playing-on-the-beach-7862539/', license: 'Pexels', licenseUrl: 'https://www.pexels.com/license/' },
+  { file: 'bestemmingen.jpg', subject: { nl: 'Kustlijn van de Algarve', en: 'Algarve coastline' }, by: 'Prajwal', url: 'https://www.pexels.com/photo/scenic-algarve-coastline-with-dramatic-cliffs-31951184/', license: 'Pexels', licenseUrl: 'https://www.pexels.com/license/' },
+  { file: 'destinations/mallorca.jpg', subject: { nl: 'Baai op Mallorca', en: 'Cove in Mallorca' }, by: 'Brian de Karma', url: 'https://www.pexels.com/photo/idyllic-landscape-with-turquoise-sea-and-rocky-coast-12113607/', license: 'Pexels', licenseUrl: 'https://www.pexels.com/license/' },
+  { file: 'destinations/belek-turkije.jpg', subject: { nl: 'Strand in de regio Antalya', en: 'Beach in the Antalya region' }, by: 'Hakam Magdea', url: 'https://www.pexels.com/photo/sunlit-beach-scene-in-antalya-turkiye-31579436/', license: 'Pexels', licenseUrl: 'https://www.pexels.com/license/' },
+  { file: 'destinations/algarve.jpg', subject: { nl: 'Benagil, Algarve', en: 'Benagil, Algarve' }, by: 'Mo Eid', url: 'https://www.pexels.com/photo/cliff-over-benagil-beach-in-portugal-20715202/', license: 'Pexels', licenseUrl: 'https://www.pexels.com/license/' },
+  { file: 'destinations/marokko-taghazout.jpg', subject: { nl: 'Surfen bij Taghazout', en: 'Surfing near Taghazout' }, by: 'Alice Karolina (@spiltgold)', url: 'https://unsplash.com/photos/HP1XOsOAna8', license: 'Unsplash', licenseUrl: 'https://unsplash.com/license' },
+  { file: 'destinations/veluwe.jpg', subject: { nl: 'Bloeiende heide', en: 'Heather in bloom' }, by: 'Nuri Askerhan', url: 'https://www.pexels.com/photo/serene-landscape-of-blooming-heather-field-39162031/', license: 'Pexels', licenseUrl: 'https://www.pexels.com/license/' },
+];

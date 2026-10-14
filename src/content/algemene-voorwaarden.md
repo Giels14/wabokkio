@@ -19,7 +19,7 @@
 ## Artikel 4. Aanvraag en offerte
 1. Een aanvraag via de website is vrijblijvend.
 2. Een offerte is geldig voor de termijn die erin staat. Prijzen en beschikbaarheid kunnen tot de bevestiging veranderen.
-3. Wabokkio stuurt een offerte binnen 2 werkdagen.
+3. Wabokkio stuurt een offerte binnen 5 werkdagen.
 
 ## Artikel 5. Boeking en bevestiging
 1. Een boeking is definitief als de klant de offerte schriftelijk accepteert, de eventuele aanbetaling heeft gedaan en Wabokkio de boeking heeft bevestigd.
