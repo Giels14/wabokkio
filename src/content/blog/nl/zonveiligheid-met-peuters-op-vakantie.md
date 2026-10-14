@@ -1,0 +1,48 @@
+---
+title: "Zonveiligheid met peuters op vakantie: schaduw, hoed en slim smeren"
+description: "Zo bescherm je je peuter tegen de zon zonder de vakantie te verpesten: lagen, timing, SPF en wat te doen bij de eerste roodheid."
+date: 2026-09-21
+slug: zonveiligheid-met-peuters-op-vakantie
+lang: nl
+translationKey: sun-safety
+tags:
+  - zon
+  - veiligheid
+  - peuter
+  - zomer
+---
+
+# Zonveiligheid met peuters op vakantie: schaduw, hoed en slim smeren
+
+Zon hoort bij vakantie. Verbrande schoudertjes niet. Met peuters werkt zonveiligheid het best als een laagjessysteem — niet als één flesje SPF dat alles moet oplossen.
+
+## Schaduw is laag één
+
+Zoek bomen, parasols, strandtenten of de kap van de buggy. Baby’s jonger dan zes maanden horen zo veel mogelijk uit direct zonlicht. Peuters ook: plan speelmomenten buiten de felste uren, grofweg tussen 10.00 en 16.00 uur, of wissel af met schaduwpauzes.
+
+## Kleding en hoed: laag twee
+
+Lichte, stevig geweven kleding of UV-zwemkleding met lange mouwen dekt meer dan crème alleen. Een hoed met brede rand (en bij voorkeur een lintje onder de kin) beschermt gezicht, oren en nek. Kindersonnenbrillen met goede UV-bescherming zijn een bonus als je kind ze ophoudt.
+
+## Smeer slim: laag drie
+
+Kies een breed-spectrum zonnebrandmiddel (UVA én UVB) met minstens SPF 30. Smeer 15 tot 30 minuten vóór je naar buiten gaat, generous — vooral gezicht, oren, handen, voeten en knieholtes. Opnieuw aanbrengen ongeveer elke twee uur, en sneller na zwemmen, zweten of afdrogen. Bewolkt weer telt mee: een groot deel van de UV komt er alsnog door, en zand en water kaatsen stralen terug.
+
+## Baby’s en gevoelige huid
+
+Voor de allerkleinsten blijft schaduw en bedekkende kleding het belangrijkst; op kleine blootgestelde plekjes kan zonnebrand soms, maar overleg bij twijfel met je arts. Bij irritatie: probeer een mineraal product met zinkoxide of titaniumdioxide.
+
+## Drinken en afkoelen
+
+Bied water vaak aan, ook als je kind niet vraagt. Roodheid, hangerigheid of oververhitting? Direct de schaduw in, kleding lichter, afkoelen met lauw water. Bij blaren, koorts of een baby onder het jaar met verbranding: contacteer een arts.
+
+## Maak er een ritueel van
+
+“Hoed op, smeren, dan speelplaats” als vast liedje voorkomt discussie. Jij doet hetzelfde voor. Voorbeeld werkt sneller dan uitleg.
+
+
+## Reflectie en hoogte niet vergeten
+
+Op het strand, bij het zwembad of op sneeuw kaatst UV terug; je kunt sneller verbranden dan je denkt, ook in de schaduwrand. Op hogere bestemmingen is de zon feller. Neem dus genoeg crème mee (mini’s voor onderweg, een grotere tube voor de kamer) en stel een telefoonherinnering in voor hersmeren — want tussen emmertjes en golven vergeet je de klok.
+
+Wil je een bestemming waar schaduw, timing en kindvriendelijke plekken al in het plan zitten? [Vraag een voorstel aan](/aanvraag). Geen servicekosten, offerte binnen vijf werkdagen.

@@ -6,6 +6,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Elke maandag 07:05 UTC: publiceert vooruitgedateerde posts zonder push
+  schedule:
+    - cron: "5 7 * * 1"
 
 permissions:
   contents: read
