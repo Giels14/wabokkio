@@ -1,11 +1,11 @@
 ---
 import Logo from './Logo.astro';
 import { t, r, type Lang, type PageKey } from '../i18n';
-const { lang, page } = Astro.props as { lang: Lang; page: PageKey };
+const { lang, page, alternates } = Astro.props as { lang: Lang; page: PageKey; alternates?: Partial<Record<Lang, string>> };
 const d = t(lang);
 const other: Lang = lang === 'nl' ? 'en' : 'nl';
-const links: [PageKey, string][] = [['destinations', d.nav.destinations], ['about', d.nav.about]];
-const switchHref = page === 'notFound' ? r('home', other) : r(page, other);
+const links: [PageKey, string][] = [['destinations', d.nav.destinations], ['blog', d.nav.blog], ['about', d.nav.about]];
+const switchHref = alternates ? (alternates[other] ?? r(page === 'notFound' ? 'home' : page, other)) : page === 'notFound' ? r('home', other) : r(page, other);
 ---
 <header class="site-header">
   <div class="wrap header-inner">

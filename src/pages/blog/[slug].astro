@@ -1,0 +1,11 @@
+---
+import { getEntry } from 'astro:content';
+import Post from '../../views/blog/Post.astro';
+import { getPosts } from '../../lib/blog';
+export async function getStaticPaths() {
+  return (await getPosts('nl')).map((post) => ({ params: { slug: post.data.slug }, props: { post } }));
+}
+const { post } = Astro.props;
+const print = await getEntry('blogPrint', post.id);
+---
+<Post post={post} hasPrint={!!print} />

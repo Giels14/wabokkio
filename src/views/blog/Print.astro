@@ -1,0 +1,22 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { t, type Lang } from '../../i18n';
+import { postUrl, type Post } from '../../lib/blog';
+const { post, print } = Astro.props as { post: Post; print: CollectionEntry<'blogPrint'> };
+const lang = post.data.lang as Lang;
+const d = t(lang);
+const { Content } = await render(print);
+---
+<Base lang={lang} page="blog" title={print.data.title} description={post.data.description} alternates={{ [lang]: postUrl(post) }} noindex>
+  <section class="section print-page"><div class="wrap prose">
+    <p class="no-print print-actions">
+      <button type="button" class="btn btn-primary btn-sm" data-print>{d.blog.printNow}</button>
+      <a class="btn btn-ghost btn-sm" href={postUrl(post)}>{d.blog.printBack}</a>
+      <span class="hint">{d.blog.printHint}</span>
+    </p>
+    <div class="print-list"><Content /></div>
+    <p class="print-footer">wabokkio.nl{postUrl(post)}</p>
+  </div></section>
+  <script is:inline src="/js/print.js" defer></script>
+</Base>

@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import { t, r, type Lang } from '../../i18n';
+import { getPosts, postUrl, formatDate, isoDate } from '../../lib/blog';
+const { lang } = Astro.props as { lang: Lang };
+const d = t(lang);
+const posts = await getPosts(lang);
+---
+<Base lang={lang} page="blog" title={d.blog.title} description={d.blog.description}>
+  <section class="page-hero"><div class="wrap"><h1>{d.blog.title}</h1><p class="lead">{d.blog.lead}</p></div></section>
+  <section class="section"><div class="wrap">
+    {posts.length === 0 && <p>{d.blog.empty}</p>}
+    <ul class="post-list">
+      {posts.map((p) => (
+        <li class="card post-card">
+          <div class="card-body">
+            <time class="post-date" datetime={isoDate(p.data.date)}>{formatDate(p.data.date, lang)}</time>
+            <h2 class="post-card-title"><a href={postUrl(p)}>{p.data.title}</a></h2>
+            <p>{p.data.description}</p>
+            <span class="post-more" aria-hidden="true">{d.blog.readMore} →</span>
+          </div>
+        </li>
+      ))}
+    </ul>
+    <p class="center"><a class="btn btn-primary" href={`${r('home', lang)}#aanvraag`}>{d.blog.cta}</a></p>
+  </div></section>
+</Base>

@@ -1,6 +1,6 @@
 export default {
   meta: { siteTitle: 'Wabokkio · Familiereizen op maat', description: 'Wabokkio zoekt de familiekamer die echt bij jullie gezin past. Persoonlijk advies van reizende ouders, tegen reisagenttarieven.' },
-  nav: { destinations: 'Bestemmingen', about: 'Over ons', cta: 'Vraag offerte aan', switchLabel: 'English', switchAria: 'Switch to English', skip: 'Naar inhoud', menu: 'Hoofdmenu', home: 'Wabokkio, naar home' },
+  nav: { destinations: 'Bestemmingen', blog: 'Blog', about: 'Over ons', cta: 'Vraag offerte aan', switchLabel: 'English', switchAria: 'Switch to English', skip: 'Naar inhoud', menu: 'Hoofdmenu', home: 'Wabokkio, naar home' },
   hero: { eyebrow: 'Familiereizen op maat', title: 'De familiekamer die écht bij jullie gezin past', lead: 'Vertel ons wie er meegaat en wat jullie zoeken. Wij, reizende ouders, komen binnen 5 werkdagen met een persoonlijk voorstel tegen reisagenttarieven.', imageAlt: 'Gezin op vakantie', featureAlt: 'Kinderen spelen op het strand' },
   trust: { aria: 'Waarom Wabokkio', iata: 'Geregistreerd reisagent · IATA TIDS', quote: 'Offerte binnen 5 werkdagen', fee: 'Geen servicefee', advice: 'Persoonlijk advies van reizende ouders' },
   resorts: { title: 'Onze favoriete familieresorts', lead: 'Een greep uit de resorts die we graag aanraden. Prijzen hangen af van jullie data en gezin, daarom maken we altijd een offerte op maat.', all: 'Alle bestemmingen', ask: 'Vraag prijs aan', moodPhoto: 'sfeerbeeld van de bestemming, niet het resort', illustration: 'Illustratie' },
@@ -24,6 +24,7 @@ export default {
   },
   thanks: { title: 'Bedankt voor je aanvraag!', body: 'We hebben je aanvraag ontvangen en sturen je een bevestiging per e-mail. Binnen 5 werkdagen hoor je van ons.', back: 'Terug naar home' },
   notFound: { title: 'Oeps, deze pagina bestaat niet', back: 'Naar home' },
+  blog: { title: 'Blog', description: 'Praktische tips en paklijsten voor reizen met kinderen, van baby tot schoolkind.', lead: 'Praktische tips voor reizen met kinderen, van baby tot schoolkind. Door reizende ouders.', readMore: 'Lees verder', ctaTitle: 'Op vakantie met je gezin?', ctaText: 'Vertel ons wat je zoekt. We stellen een verblijf voor waar al aan je gezin gedacht is, en je hebt binnen 5 werkdagen een offerte.', cta: 'Vraag je verblijf aan', back: 'Alle blogposts', published: 'Gepubliceerd op', print: 'Printversie', printNow: 'Print deze lijst', printBack: 'Terug naar het artikel', printHint: 'Tip: print op A4 of sla op als pdf.', empty: 'Binnenkort verschijnen hier de eerste artikelen.' },
   pages: { about: 'Over ons', privacy: 'Privacyverklaring', terms: 'Algemene voorwaarden', credits: 'Fotocredits' },
-  footer: { tagline: 'Familiereizen op maat, door reizende ouders.', kvk: 'KvK', privacy: 'Privacyverklaring', terms: 'Algemene voorwaarden', credits: 'Fotocredits' },
+  footer: { blog: 'Blog', tagline: 'Familiereizen op maat, door reizende ouders.', kvk: 'KvK', privacy: 'Privacyverklaring', terms: 'Algemene voorwaarden', credits: 'Fotocredits' },
 };

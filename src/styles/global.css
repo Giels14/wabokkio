@@ -91,3 +91,29 @@ input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);ba
 .logo-stacked-white img{height:120px}
 .btn-sm{white-space:nowrap}@media (max-width:640px){nav{gap:10px}.site-header .btn-sm{padding:.45em .8em;font-size:.82rem}.logo img{height:32px}}
 .credits{width:100%;border-collapse:collapse;font-size:.92rem;margin:1em 0}.credits th,.credits td{text-align:left;padding:.5em;border-bottom:1px solid #e6eaf3}
+/* Blog */
+.post-list{list-style:none;padding:0;margin:0 0 32px;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.post-card{position:relative;transition:transform .1s,box-shadow .2s}.post-card:hover{transform:translateY(-2px)}
+.post-card-title{font-size:1.25rem;margin:0}.post-card-title a{color:var(--navy);text-decoration:none}
+.post-card-title a::after{content:"";position:absolute;inset:0}
+.post-card-title a:focus-visible{outline:none}.post-card:focus-within{box-shadow:0 0 0 3px var(--blue)}
+.post-date{color:#6b7499;font-size:.88rem;font-weight:600;margin:0}
+.post-more{color:var(--rasp);font-weight:700;margin-top:auto;padding-top:6px}
+.post-crumb{margin:0 0 10px;font-weight:600}.post-crumb a{text-decoration:none}
+.post-body ul.contains-task-list{padding-left:0;list-style:none}
+.post-body .task-list-item input,.print-list .task-list-item input{width:auto;margin:0 .5em 0 0;accent-color:var(--blue)}
+.print-list ul{list-style:none;padding-left:0;margin:.2em 0 1em}
+.print-list .task-list-item{margin:.15em 0}
+.post-cta{background:var(--cloud)}
+.print-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.print-footer{color:#6b7499;font-size:.82rem;margin-top:24px}
+@media print{
+  .site-header,.site-footer,.skip,.no-print,.post-cta{display:none!important}
+  body{font-size:11pt;color:#000}
+  .page-hero,.section{background:none!important;padding:0 0 8pt}
+  .prose{max-width:none}a{color:#000;text-decoration:none}
+  .print-list{columns:2;column-gap:24pt}.print-list p,.print-list ul{break-inside:avoid}
+  .print-list h1{column-span:all;font-size:18pt}
+  @page{margin:14mm}
+}
+.post-cta .section-lead{margin:0 auto 20px}

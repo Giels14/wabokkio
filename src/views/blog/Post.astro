@@ -1,0 +1,45 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { t, r, type Lang } from '../../i18n';
+import { getPosts, postUrl, printUrl, findTranslation, formatDate, isoDate, type Post } from '../../lib/blog';
+import { company } from '../../data/site';
+const { post, hasPrint } = Astro.props as { post: Post; hasPrint: boolean };
+const lang = post.data.lang as Lang;
+const d = t(lang);
+const pair = findTranslation(post, await getPosts());
+const alternates = { [lang]: postUrl(post), ...(pair ? { [pair.data.lang]: postUrl(pair) } : {}) };
+const { Content } = await render(post);
+const abs = (p: string) => new URL(p, Astro.site).toString();
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: post.data.title,
+  description: post.data.description,
+  inLanguage: lang === 'nl' ? 'nl-NL' : 'en-GB',
+  datePublished: isoDate(post.data.date),
+  dateModified: isoDate(post.data.updated ?? post.data.date),
+  mainEntityOfPage: abs(postUrl(post)),
+  url: abs(postUrl(post)),
+  author: { '@type': 'Organization', name: company.name, url: abs('/') },
+  publisher: { '@type': 'Organization', name: company.name, url: abs('/'), logo: { '@type': 'ImageObject', url: abs('/favicon-512.png') } },
+  ...(post.data.tags.length ? { keywords: post.data.tags.join(', ') } : {}),
+};
+---
+<Base lang={lang} page="blog" title={post.data.title} description={post.data.description} alternates={alternates} ogType="article">
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
+  <article>
+    <header class="page-hero"><div class="wrap prose">
+      <p class="post-crumb no-print"><a href={r('blog', lang)}>← {d.blog.back}</a></p>
+      <h1>{post.data.title}</h1>
+      <p class="post-date">{d.blog.published} <time datetime={isoDate(post.data.date)}>{formatDate(post.data.date, lang)}</time></p>
+      {hasPrint && <p class="no-print"><a class="btn btn-ghost btn-sm" href={printUrl(post)}>🖨️ {d.blog.print}</a></p>}
+    </div></header>
+    <section class="section"><div class="wrap prose post-body"><Content /></div></section>
+  </article>
+  <section class="section post-cta no-print"><div class="wrap center">
+    <h2>{d.blog.ctaTitle}</h2>
+    <p class="section-lead">{d.blog.ctaText}</p>
+    <a class="btn btn-primary" href={`${r('home', lang)}#aanvraag`}>{d.blog.cta}</a>
+  </div></section>
+</Base>

@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+import Print from '../../../views/blog/Print.astro';
+import { getPosts } from '../../../lib/blog';
+export async function getStaticPaths() {
+  const prints = await getCollection('blogPrint');
+  return (await getPosts('nl')).flatMap((post) => {
+    const print = prints.find((x) => x.id === post.id);
+    return print ? [{ params: { slug: post.data.slug }, props: { post, print } }] : [];
+  });
+}
+const { post, print } = Astro.props;
+---
+<Print post={post} print={print} />

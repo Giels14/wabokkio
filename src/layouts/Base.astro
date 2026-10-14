@@ -5,13 +5,14 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { t, routes, type Lang, type PageKey } from '../i18n';
-interface Props { title?: string; description?: string; lang: Lang; page: PageKey }
-const { title, description, lang, page } = Astro.props;
+interface Props { title?: string; description?: string; lang: Lang; page: PageKey; alternates?: Partial<Record<Lang, string>>; noindex?: boolean; ogType?: string }
+const { title, description, lang, page, alternates, noindex = false, ogType = 'website' } = Astro.props;
 const d = t(lang);
 const desc = description ?? d.meta.description;
 const fullTitle = title ? `${title} · Wabokkio` : d.meta.siteTitle;
 const abs = (p: string) => new URL(p, Astro.site).toString();
-const alt = page !== 'notFound' ? routes[page] : null;
+// alternates (bv. blogposts) gaat voor de vaste route; ontbreekt een vertaling, dan alleen de eigen taal
+const alt: Partial<Record<Lang, string>> | null = alternates ?? (page !== 'notFound' ? routes[page] : null);
 ---
 <!doctype html>
 <html lang={lang}>
@@ -20,11 +21,11 @@ const alt = page !== 'notFound' ? routes[page] : null;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={desc} />
-    {page === 'notFound' && <meta name="robots" content="noindex" />}
-    {alt && <link rel="canonical" href={abs(alt[lang])} />}
-    {alt && <link rel="alternate" hreflang="nl" href={abs(alt.nl)} />}
-    {alt && <link rel="alternate" hreflang="en" href={abs(alt.en)} />}
-    {alt && <link rel="alternate" hreflang="x-default" href={abs(alt.nl)} />}
+    {(page === 'notFound' || noindex) && <meta name="robots" content="noindex" />}
+    {alt?.[lang] && <link rel="canonical" href={abs(alt[lang]!)} />}
+    {alt?.nl && alt?.en && <link rel="alternate" hreflang="nl" href={abs(alt.nl)} />}
+    {alt?.nl && alt?.en && <link rel="alternate" hreflang="en" href={abs(alt.en)} />}
+    {alt?.nl && alt?.en && <link rel="alternate" hreflang="x-default" href={abs(alt.nl)} />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="/favicon-180.png" />
@@ -32,11 +33,14 @@ const alt = page !== 'notFound' ? routes[page] : null;
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={desc} />
     <meta property="og:locale" content={lang === 'nl' ? 'nl_NL' : 'en_GB'} />
+    <meta property="og:type" content={ogType} />
+    {alt?.[lang] && <meta property="og:url" content={abs(alt[lang]!)} />}
     <meta name="theme-color" content="#2F6BFF" />
+    <slot name="head" />
   </head>
   <body>
     <a class="skip" href="#main">{d.nav.skip}</a>
-    <Header lang={lang} page={page} />
+    <Header lang={lang} page={page} alternates={alternates} />
     <main id="main"><slot /></main>
     <Footer lang={lang} />
   </body>

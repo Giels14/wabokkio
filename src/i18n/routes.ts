@@ -5,6 +5,7 @@ export const langs: Lang[] = ['nl', 'en'];
 export const routes = {
   home: { nl: '/', en: '/en/' },
   destinations: { nl: '/bestemmingen/', en: '/en/destinations/' },
+  blog: { nl: '/blog/', en: '/en/blog/' },
   about: { nl: '/over-ons/', en: '/en/about/' },
   privacy: { nl: '/privacyverklaring/', en: '/en/privacy/' },
   terms: { nl: '/algemene-voorwaarden/', en: '/en/terms/' },

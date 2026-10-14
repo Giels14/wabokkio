@@ -121,3 +121,35 @@ npx wrangler pages dev dist
 
 ## Security headers
 Zie `public/_headers`. De CSP staat alleen eigen bestanden toe plus `challenges.cloudflare.com` voor Turnstile; fonts (Nunito, Inter) zijn self-hosted via Fontsource, dus geen Google Fonts-verzoeken. Voeg je later analytics of andere scripts toe, pas dan de CSP aan. HSTS staat aan met `includeSubDomains` maar bewust zonder `preload`.
+
+## Blog
+
+NL-overzicht op `/blog/`, EN op `/en/blog/`. Posts staan als markdown in een content collection (`src/content.config.ts`).
+
+### Een post toevoegen
+
+1. Zet per taal één `.md`-bestand neer:
+   - Nederlands: `src/content/blog/nl/<slug>.md` → `https://wabokkio.nl/blog/<slug>/`
+   - Engels: `src/content/blog/en/<slug>.md` → `https://wabokkio.nl/en/blog/<slug>/`
+2. Frontmatter:
+
+   ```yaml
+   ---
+   title: "Titel van de post"
+   description: "Korte intro (ook meta description en tekst op de kaart)."
+   date: 2026-10-19          # publicatiedatum (JJJJ-MM-DD)
+   slug: titel-van-de-post   # wordt de URL; alleen kleine letters, cijfers en -
+   lang: nl                  # nl of en
+   translationKey: titel-x   # zelfde waarde in NL en EN = vertaalpaar (hreflang + taalknop)
+   tags: [tips]              # optioneel
+   updated: 2026-10-20       # optioneel, voor dateModified
+   draft: false              # optioneel; true = niet publiceren
+   ---
+   ```
+
+   In plaats van `translationKey` mag ook een `hreflang:`-blok met `nl:`/`en:`-paden (zoals in de aangeleverde bestanden).
+3. De eerste `# Kop` in de tekst wordt weggelaten (de titel komt uit de frontmatter). Links naar `/aanvraag` en `/en/request` worden automatisch `/#aanvraag` en `/en/#aanvraag`. Onderaan elke post staat al een knop naar het aanvraagformulier.
+4. Optionele printversie: zet een bestand met **dezelfde bestandsnaam** in `src/content/blog-print/nl/` of `src/content/blog-print/en/` (frontmatter minimaal `title` en `lang`). Dan verschijnt er een knop "Printversie" en een pagina `/blog/<slug>/print/` (noindex, print-CSS op A4).
+5. Commit en push naar `main`; GitHub Actions bouwt en deployt. Overzicht, sitemap (`/sitemap.xml`), hreflang en Article-JSON-LD gaan vanzelf.
+
+Posts met een datum in de toekomst worden pas getoond bij een build op of na die datum. Zet je een maandagpost vooruit klaar, dan verschijnt die bij de eerstvolgende push (of start de workflow handmatig via "Run workflow").
