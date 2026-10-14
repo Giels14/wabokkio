@@ -1,0 +1,12 @@
+name = "wabokkio-aanvragen-cleanup"
+main = "cleanup.ts"
+compatibility_date = "2026-10-01"
+workers_dev = false
+
+[triggers]
+crons = ["0 3 * * *"]   # dagelijks 03:00 UTC
+
+[[d1_databases]]
+binding = "DB"
+database_name = "wabokkio-aanvragen"
+database_id = "VUL-IN-NA-wrangler-d1-create"

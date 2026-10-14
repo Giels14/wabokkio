@@ -1,0 +1,17 @@
+---
+import type { Resort } from '../data/site';
+const { r } = Astro.props as { r: Resort };
+---
+<article class="card">
+  <div class={`card-img g-${r.slug}`} role="img" aria-label={`Illustratie ${r.name}`}>
+    <span class="card-icon" aria-hidden="true">{r.icon}</span>
+    <span class="card-country">{r.country}</span>
+  </div>
+  <div class="card-body">
+    <h3>{r.name}</h3>
+    <p class="card-place">{r.place}</p>
+    <p>{r.tagline}</p>
+    <ul class="tags">{r.tags.map((t) => <li>{t}</li>)}</ul>
+    <a class="btn btn-secondary prefill" href={`/?resort=${encodeURIComponent(r.name)}#aanvraag`} data-resort={r.name}>Vraag prijs aan</a>
+  </div>
+</article>

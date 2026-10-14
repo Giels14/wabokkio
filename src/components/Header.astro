@@ -1,0 +1,14 @@
+---
+import Logo from './Logo.astro';
+const path = Astro.url.pathname;
+const links = [ ['/bestemmingen/', 'Bestemmingen'], ['/over-ons/', 'Over ons'] ];
+---
+<header class="site-header">
+  <div class="wrap header-inner">
+    <Logo />
+    <nav aria-label="Hoofdmenu">
+      {links.map(([href, label]) => <a href={href} aria-current={path.startsWith(href) ? 'page' : undefined}>{label}</a>)}
+      <a href="/#aanvraag" class="btn btn-primary btn-sm">Vraag offerte aan</a>
+    </nav>
+  </div>
+</header>

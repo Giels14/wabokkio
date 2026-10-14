@@ -1,0 +1,5 @@
+# Lokale secrets voor `wrangler pages dev` - kopieer naar .dev.vars (staat in .gitignore)
+RESEND_API_KEY=re_xxx
+MAIL_FROM="Wabokkio <aanvraag@send.wabokkio.nl>"
+MAIL_TO=travel@wabokkio.nl
+TURNSTILE_SECRET_KEY=

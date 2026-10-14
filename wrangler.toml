@@ -1,0 +1,14 @@
+# Cloudflare Pages-config (wrangler pages dev / deploy)
+name = "wabokkio-site"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "wabokkio-aanvragen"
+database_id = "VUL-IN-NA-wrangler-d1-create"
+
+[vars]
+MAIL_TO = "travel@wabokkio.nl"
+MAIL_FROM = "Wabokkio <aanvraag@send.wabokkio.nl>"
+# Secrets NIET hier: RESEND_API_KEY en TURNSTILE_SECRET_KEY via dashboard of `wrangler pages secret put`

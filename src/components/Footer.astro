@@ -1,0 +1,25 @@
+---
+import Logo from './Logo.astro';
+import { company as c } from '../data/site';
+---
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <Logo />
+      <p>Familiereizen op maat, door reizende ouders.</p>
+    </div>
+    <div>
+      <strong>{c.name}</strong><br />
+      {c.street}<br />{c.zip} {c.city}<br />
+      KvK {c.kvk}<br />
+      IATA TIDS {c.iata}
+    </div>
+    <div>
+      <a href={`mailto:${c.email}`}>{c.email}</a><br />
+      <a href={`tel:${c.phoneHref}`}>{c.phone}</a><br /><br />
+      <a href="/privacyverklaring/">Privacyverklaring</a><br />
+      <a href="/algemene-voorwaarden/">Algemene voorwaarden</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">© {new Date().getFullYear()} {c.name}</div>
+</footer>
