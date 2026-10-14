@@ -8,7 +8,7 @@ import uharfbuzz as hb
 FS = 'node_modules/@fontsource-variable/'
 FONTS = {'Nunito': FS + 'nunito/files/nunito-latin-wght-normal.woff2', 'Inter': FS + 'inter/files/inter-latin-wght-normal.woff2'}
 
-def to_path(text, family, weight, size, x0, y0):
+def to_path(text, family, weight, size, x0, y0, anchor='start'):
     f = TTFont(FONTS[family]); f.flavor = None
     buf = io.BytesIO(); f.save(buf); data = buf.getvalue()
     face = hb.Face(data); font = hb.Font(face); font.set_variations({'wght': weight})
@@ -16,6 +16,8 @@ def to_path(text, family, weight, size, x0, y0):
     upem = f['head'].unitsPerEm; s = size / upem
     gs = f.getGlyphSet(location={'wght': weight}); order = f.getGlyphOrder()
     pen = SVGPathPen(gs, ntos=lambda v: ('%.2f' % v).rstrip('0').rstrip('.'))
+    total = sum(p.x_advance for p in b.glyph_positions) * s
+    x0 -= {'middle': total / 2, 'end': total}.get(anchor, 0)
     x = 0
     for info, pos in zip(b.glyph_infos, b.glyph_positions):
         g = gs[order[info.codepoint]]
@@ -28,7 +30,7 @@ def repl(m):
     attrs, text = m.group(1), m.group(2)
     a = dict(re.findall(r'([\w-]+)="([^"]*)"', attrs))
     fam = 'Nunito' if 'Nunito' in a['font-family'] else 'Inter'
-    d = to_path(text, fam, int(a.get('font-weight', 400)), float(a['font-size']), float(a['x']), float(a['y']))
+    d = to_path(text, fam, int(a.get('font-weight', 400)), float(a['font-size']), float(a['x']), float(a['y']), a.get('text-anchor', 'start'))
     return f'<path aria-label="{text}" fill="{a["fill"]}" d="{d}"/>'
 out = re.sub(r'<text([^>]*)>([^<]*)</text>', repl, src)
 out = out.replace('<svg ', '<svg role="img" aria-label="Wabokkio" ', 1)

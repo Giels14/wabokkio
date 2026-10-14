@@ -11,7 +11,7 @@ Wabokkio B.V. · KvK 58114262 · Groot Emiclaer 157, 3822 TL Amersfoort · IATA 
 | `src/content/*.md` | Teksten (over ons, privacy, voorwaarden) |
 | `src/data/site.ts` | Bedrijfsgegevens en resortkaarten (volgorde = volgorde op site) |
 | `src/config.ts` | `SHOW_PARTNERS` (standaard `false`): strook "Onze partners" (Ratehawk, Expedia TAAP, alleen tekst) boven de footer op home |
-| `public/wabokkio-logo*.svg`, `favicon*` | Merkbestanden uit `/workspace/wabokkio/brand/`. In de logo's is de `<text>` omgezet naar paden met `scripts/svg-text-to-paths.py` (Nunito 800 / Inter 400), zodat ze als `<img>` overal gelijk renderen. Bij een nieuw logo opnieuw draaien. |
+| `public/wabokkio-logo-*.svg`, `favicon*` | Merkbestanden uit `/workspace/wabokkio/brand/`: `header` (header), `header-white` (donkere footer; er is geen witte stacked-versie), `stacked` (Nederlandse slogan, voor lichte achtergrond, mail en print; staat klaar maar wordt op de site nog niet gebruikt). In de logo's is de `<text>` omgezet naar paden met `scripts/svg-text-to-paths.py` (Nunito 800 / Inter 400), zodat ze als `<img>` overal gelijk renderen. Bij een nieuw logo opnieuw draaien. |
 | `src/styles/tokens.css` | Merktokens (kleuren, fonts, radius) |
 | `public/js/form.js` | Formulierlogica (kamers, leeftijden kinderen, prefill vanuit "Vraag prijs aan") |
 | `public/_headers` | Security headers (CSP, HSTS, nosniff, Referrer-Policy, Permissions-Policy, frame-ancestors 'none') |

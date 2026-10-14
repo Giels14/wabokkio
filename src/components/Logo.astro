@@ -1,9 +1,10 @@
 ---
-// Merklogo (tekst omgezet naar paden met scripts/svg-text-to-paths.py, dus fontonafhankelijk als <img>).
-interface Props { variant?: 'light' | 'white' }
-const { variant = 'light' } = Astro.props;
-const src = variant === 'white' ? '/wabokkio-logo-white.svg' : '/wabokkio-logo.svg';
+// Merklogo's (tekst omgezet naar paden met scripts/svg-text-to-paths.py, dus fontonafhankelijk als <img>).
+// 'header' = liggend zonder slogan; 'header-white' = idem voor donkere achtergrond; 'stacked' = tekst onder pinguïn met slogan (lichte achtergrond, mail/print).
+interface Props { variant?: 'header' | 'header-white' | 'stacked' }
+const { variant = 'header' } = Astro.props;
+const dims = { header: [400, 100], 'header-white': [400, 100], stacked: [300, 230] }[variant];
 ---
-<a href="/" class="logo" aria-label="Wabokkio, naar home">
-  <img src={src} alt="Wabokkio" width="420" height="100" />
+<a href="/" class={`logo logo-${variant}`} aria-label="Wabokkio, naar home">
+  <img src={`/wabokkio-logo-${variant}.svg`} alt="Wabokkio" width={dims[0]} height={dims[1]} />
 </a>
