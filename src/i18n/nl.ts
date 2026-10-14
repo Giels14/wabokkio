@@ -1,7 +1,7 @@
 export default {
-  meta: { siteTitle: 'Wabokkio · Familiereizen op maat', description: 'Wabokkio zoekt de familiekamer die bij jullie gezin past. Persoonlijk advies van reizende ouders, tegen reisagenttarieven.' },
+  meta: { siteTitle: 'Wabokkio · Familiereizen op maat', description: 'Wabokkio zoekt de familiekamer die echt bij jullie gezin past. Persoonlijk advies van reizende ouders, tegen reisagenttarieven.' },
   nav: { destinations: 'Bestemmingen', blog: 'Blog', about: 'Over ons', cta: 'Vraag offerte aan', switchLabel: 'English', switchAria: 'Switch to English', skip: 'Naar inhoud', menu: 'Hoofdmenu', home: 'Wabokkio, naar home' },
-  hero: { eyebrow: 'Familiereizen op maat', title: 'De familiekamer die bij jullie gezin past', lead: 'Vertel ons wie er meegaat en wat jullie zoeken. Wij, reizende ouders, komen binnen 5 werkdagen met een persoonlijk voorstel tegen reisagenttarieven.', imageAlt: 'Gezin op vakantie', featureAlt: 'Kinderen spelen op het strand' },
+  hero: { eyebrow: 'Familiereizen op maat', title: 'De familiekamer die écht bij jullie gezin past', lead: 'Vertel ons wie er meegaat en wat jullie zoeken. Wij, reizende ouders, komen binnen 5 werkdagen met een persoonlijk voorstel tegen reisagenttarieven.', imageAlt: 'Gezin op vakantie', featureAlt: 'Kinderen spelen op het strand' },
   trust: { aria: 'Waarom Wabokkio', iata: 'Geregistreerd reisagent · IATA TIDS', quote: 'Offerte binnen 5 werkdagen', fee: 'Geen servicefee', advice: 'Persoonlijk advies van reizende ouders' },
   resorts: { title: 'Onze favoriete familieresorts', lead: 'Een greep uit de resorts die we graag aanraden. Prijzen hangen af van jullie data en gezin, daarom maken we altijd een offerte op maat.', all: 'Alle bestemmingen', ask: 'Vraag prijs aan', moodPhoto: 'sfeerbeeld van de bestemming, niet het resort', illustration: 'Illustratie' },
   how: { title: 'Hoe het werkt', steps: [

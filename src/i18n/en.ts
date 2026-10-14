@@ -1,9 +1,9 @@
 // Keys must stay identical to src/i18n/nl.ts.
 import type nl from './nl';
 const en: typeof nl = {
-  meta: { siteTitle: 'Wabokkio · Family travel, made easy', description: 'Wabokkio finds the family room that suits your family. Personal advice from parents who travel, at travel-agent rates.' },
+  meta: { siteTitle: 'Wabokkio · Family travel, made easy', description: 'Wabokkio finds the family room that really suits your family. Personal advice from parents who travel, at travel-agent rates.' },
   nav: { destinations: 'Destinations', blog: 'Blog', about: 'About us', cta: 'Request a quote', switchLabel: 'Nederlands', switchAria: 'Naar de Nederlandse versie', skip: 'Skip to content', menu: 'Main menu', home: 'Wabokkio, back to home' },
-  hero: { eyebrow: 'Family travel, made easy', title: 'The family room that suits your family', lead: 'Tell us who’s coming and what you’re looking for. As parents who travel ourselves, we’ll come back to you within 5 working days with a personal proposal at travel-agent rates.', imageAlt: 'A family on holiday', featureAlt: 'Children playing on the beach' },
+  hero: { eyebrow: 'Family travel, made easy', title: 'The family room that really suits your family', lead: 'Tell us who’s coming and what you’re looking for. As parents who travel ourselves, we’ll come back to you within 5 working days with a personal proposal at travel-agent rates.', imageAlt: 'A family on holiday', featureAlt: 'Children playing on the beach' },
   trust: { aria: 'Why Wabokkio', iata: 'Registered travel agent · IATA TIDS', quote: 'Quote within 5 working days', fee: 'No service fee', advice: 'Personal advice from parents who travel' },
   resorts: { title: 'Our favourite family resorts', lead: 'A selection of the resorts we love to recommend. Prices depend on your dates and your family, which is why every quote is on request and made for you.', all: 'All destinations', ask: 'Price on request', moodPhoto: 'illustrative photo of the destination, not the resort', illustration: 'Illustration' },
   how: { title: 'How it works', steps: [
