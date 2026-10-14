@@ -8,7 +8,7 @@
  */
 interface Env {
   DB: D1Database;
-  RESEND_API_KEY: string;
+  RESEND_API_KEY?: string;
   MAIL_FROM: string; // bv. "Wabokkio <aanvraag@send.wabokkio.nl>"
   MAIL_TO?: string; // standaard travel@wabokkio.nl
   TURNSTILE_SECRET_KEY?: string; // leeg = Turnstile-check uit
@@ -77,6 +77,7 @@ async function verifyTurnstile(token: string, secret: string, ip: string | null)
 }
 
 async function sendMail(env: Env, payload: Record<string, unknown>) {
+  if (!env.RESEND_API_KEY || !env.MAIL_FROM) { console.warn('RESEND_API_KEY/MAIL_FROM ontbreekt: mail overgeslagen'); return; }
   const r = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'Content-Type': 'application/json' },

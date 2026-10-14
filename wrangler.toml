@@ -1,12 +1,12 @@
 # Cloudflare Pages-config (wrangler pages dev / deploy)
-name = "wabokkio-site"
+name = "wabokkio"
 pages_build_output_dir = "./dist"
 compatibility_date = "2026-10-01"
 
 [[d1_databases]]
 binding = "DB"
-database_name = "wabokkio-aanvragen"
-database_id = "VUL-IN-NA-wrangler-d1-create"
+database_name = "wabokkio"
+database_id = "baaa35b7-d8b4-4e62-add6-56b20359240d"
 
 [vars]
 MAIL_TO = "travel@wabokkio.nl"

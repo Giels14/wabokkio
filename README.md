@@ -27,7 +27,7 @@ npm install
 npm run dev          # alleen de statische site
 npm run build        # bouwt naar dist/
 # Site + function + lokale D1:
-npx wrangler d1 execute wabokkio-aanvragen --local --file db/schema.sql
+npx wrangler d1 execute wabokkio --local --file db/schema.sql
 cp .dev.vars.example .dev.vars   # vul eigen waarden in, staat in .gitignore
 npx wrangler pages dev dist
 ```
@@ -35,11 +35,11 @@ npx wrangler pages dev dist
 ## Deploy naar Cloudflare Pages
 1. Zet de repo op GitHub/GitLab (nog niet gedaan) en kies in Cloudflare: *Workers & Pages → Create → Pages → Connect to Git*.
 2. Build-instellingen: framework **Astro**, build command `npm run build`, output `dist`, env var `NODE_VERSION=22`.
-   (Alternatief zonder Git: `npm run build && npx wrangler pages deploy dist --project-name wabokkio-site`.)
+   (Alternatief zonder Git: `npm run build && npx wrangler pages deploy dist --project-name wabokkio`.)
 3. **D1 aanmaken**
    ```bash
-   npx wrangler d1 create wabokkio-aanvragen     # zet het database_id in wrangler.toml én worker/wrangler.toml
-   npx wrangler d1 execute wabokkio-aanvragen --remote --file db/schema.sql
+   npx wrangler d1 create wabokkio     # zet het database_id in wrangler.toml én worker/wrangler.toml
+   npx wrangler d1 execute wabokkio --remote --file db/schema.sql
    ```
    Koppel in het Pages-project (*Settings → Bindings*) de D1-database als binding **`DB`** (of laat `wrangler.toml` het doen).
 4. **Omgevingsvariabelen** (Pages → Settings → Variables and secrets, voor Production en Preview):
@@ -64,7 +64,7 @@ npx wrangler pages dev dist
 - Werkt met JavaScript (fetch → `/bedankt/`) en zonder (gewone POST → 303 naar `/bedankt/`).
 - Honeypotveld `website`: bots krijgen "ok" maar er wordt niets opgeslagen of gemaild.
 - Na opslaan in D1: notificatie naar `MAIL_TO` (reply-to = klant) en bevestiging naar de familie ("reactie binnen 2 werkdagen"). Mislukt Resend, dan staat de aanvraag wél in D1 en wordt de fout gelogd.
-- Aanvragen bekijken: `npx wrangler d1 execute wabokkio-aanvragen --remote --command "SELECT * FROM aanvragen ORDER BY created_at DESC LIMIT 20"`.
+- Aanvragen bekijken: `npx wrangler d1 execute wabokkio --remote --command "SELECT * FROM aanvragen ORDER BY created_at DESC LIMIT 20"`.
 
 ## DNS-plan
 1. Voeg **wabokkio.nl** en **wabokkio.com** toe aan Cloudflare (Free plan) en laat Cloudflare de bestaande records scannen.
