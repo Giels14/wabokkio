@@ -1,17 +1,25 @@
 ---
+import { Image } from 'astro:assets';
 import type { Resort } from '../data/site';
-const { r } = Astro.props as { r: Resort };
+import { photo } from '../data/photos';
+import { t, r, type Lang } from '../i18n';
+const { r: resort, lang } = Astro.props as { r: Resort; lang: Lang };
+const d = t(lang);
+const img = photo(`resorts/${resort.slug}`);
+const alt = `${resort.name}, ${resort.place[lang]} (${resort.country[lang]})`;
 ---
 <article class="card">
-  <div class={`card-img g-${r.slug}`} role="img" aria-label={`Illustratie ${r.name}`}>
-    <span class="card-icon" aria-hidden="true">{r.icon}</span>
-    <span class="card-country">{r.country}</span>
+  <div class={`card-img g-${resort.slug}`} role={img ? undefined : 'img'} aria-label={img ? undefined : `${d.resorts.illustration} ${resort.name}`}>
+    {img
+      ? <Image src={img} alt={alt} widths={[400, 800]} sizes="(max-width: 700px) 100vw, 380px" loading="lazy" decoding="async" class="card-photo" />
+      : <span class="card-icon" aria-hidden="true">{resort.icon}</span>}
+    <span class="card-country">{resort.country[lang]}</span>
   </div>
   <div class="card-body">
-    <h3>{r.name}</h3>
-    <p class="card-place">{r.place}</p>
-    <p>{r.tagline}</p>
-    <ul class="tags">{r.tags.map((t) => <li>{t}</li>)}</ul>
-    <a class="btn btn-secondary prefill" href={`/?resort=${encodeURIComponent(r.name)}#aanvraag`} data-resort={r.name}>Vraag prijs aan</a>
+    <h3>{resort.name}</h3>
+    <p class="card-place">{resort.place[lang]}</p>
+    <p>{resort.tagline[lang]}</p>
+    <ul class="tags">{resort.tags.map((tg) => <li>{tg[lang]}</li>)}</ul>
+    <a class="btn btn-secondary prefill" href={`${r('home', lang)}?resort=${encodeURIComponent(resort.name)}#aanvraag`} data-resort={resort.name}>{d.resorts.ask}</a>
   </div>
 </article>

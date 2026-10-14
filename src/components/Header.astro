@@ -1,14 +1,19 @@
 ---
 import Logo from './Logo.astro';
-const path = Astro.url.pathname;
-const links = [ ['/bestemmingen/', 'Bestemmingen'], ['/over-ons/', 'Over ons'] ];
+import { t, r, type Lang, type PageKey } from '../i18n';
+const { lang, page } = Astro.props as { lang: Lang; page: PageKey };
+const d = t(lang);
+const other: Lang = lang === 'nl' ? 'en' : 'nl';
+const links: [PageKey, string][] = [['destinations', d.nav.destinations], ['about', d.nav.about]];
+const switchHref = page === 'notFound' ? r('home', other) : r(page, other);
 ---
 <header class="site-header">
   <div class="wrap header-inner">
-    <Logo />
-    <nav aria-label="Hoofdmenu">
-      {links.map(([href, label]) => <a href={href} aria-current={path.startsWith(href) ? 'page' : undefined}>{label}</a>)}
-      <a href="/#aanvraag" class="btn btn-primary btn-sm">Vraag offerte aan</a>
+    <Logo lang={lang} />
+    <nav aria-label={d.nav.menu}>
+      {links.map(([k, label]) => <a href={r(k, lang)} aria-current={page === k ? 'page' : undefined}>{label}</a>)}
+      <a href={switchHref} hreflang={other} lang={other} class="lang-switch" aria-label={d.nav.switchAria}><span class="lang-full">{d.nav.switchLabel}</span><span class="lang-short">{other.toUpperCase()}</span></a>
+      <a href={`${r('home', lang)}#aanvraag`} class="btn btn-primary btn-sm">{d.nav.cta}</a>
     </nav>
   </div>
 </header>

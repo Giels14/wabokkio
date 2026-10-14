@@ -1,10 +1,10 @@
 ---
-// Merklogo's (tekst omgezet naar paden met scripts/svg-text-to-paths.py, dus fontonafhankelijk als <img>).
-// 'header' = liggend zonder slogan; 'header-white' = idem voor donkere achtergrond; 'stacked' = tekst onder pinguïn met slogan (lichte achtergrond, mail/print).
-interface Props { variant?: 'header' | 'header-white' | 'stacked' }
-const { variant = 'header' } = Astro.props;
-const dims = { header: [400, 100], 'header-white': [400, 100], stacked: [300, 230] }[variant];
+// Merklogo's: tekst omgezet naar paden en raster-pinguïn vervangen door de vector-mark (scripts/svg-text-to-paths.py).
+import { t, r, type Lang } from '../i18n';
+interface Props { variant?: 'header' | 'header-white' | 'stacked' | 'stacked-white'; lang: Lang }
+const { variant = 'header', lang } = Astro.props;
+const dims = variant.startsWith('stacked') ? [300, 230] : [400, 100];
 ---
-<a href="/" class={`logo logo-${variant}`} aria-label="Wabokkio, naar home">
+<a href={r('home', lang)} class={`logo logo-${variant}`} aria-label={t(lang).nav.home}>
   <img src={`/wabokkio-logo-${variant}.svg`} alt="Wabokkio" width={dims[0]} height={dims[1]} />
 </a>

@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import ResortCard from '../components/ResortCard.astro';
+import { resorts } from '../data/site';
+import { photo } from '../data/photos';
+import { t, type Lang } from '../i18n';
+const { lang } = Astro.props as { lang: Lang };
+const d = t(lang);
+const header = photo('bestemmingen');
+---
+<Base lang={lang} page="destinations" title={d.destinations.title} description={d.destinations.description}>
+  <section class={`page-hero${header ? ' has-photo' : ''}`}>
+    {header && <Image src={header} alt={d.destinations.title} widths={[800, 1440, 2000]} sizes="100vw" loading="eager" class="hero-photo" />}
+    <div class="wrap"><h1>{d.destinations.title}</h1><p class="lead">{d.destinations.lead}</p></div>
+  </section>
+  <section class="section"><div class="wrap"><div class="cards">{resorts.map((x) => <ResortCard r={x} lang={lang} />)}</div></div></section>
+</Base>

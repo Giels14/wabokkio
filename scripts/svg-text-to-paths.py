@@ -1,5 +1,6 @@
 """Zet <text> in de logo-SVG's om naar <path> (Nunito 800 / Inter 400), zodat het logo als <img> correct rendert.
-Gebruik: python svg-text-to-paths.py in.svg out.svg   (vereist fonttools, brotli, uharfbuzz)"""
+Gebruik: python svg-text-to-paths.py in.svg out.svg [mark-vector.svg]
+Met een derde argument wordt de ingesloten raster-pinguïn (<image>) vervangen door de vector-mark.   (vereist fonttools, brotli, uharfbuzz)"""
 import re, sys, io
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
@@ -33,5 +34,13 @@ def repl(m):
     d = to_path(text, fam, int(a.get('font-weight', 400)), float(a['font-size']), float(a['x']), float(a['y']), a.get('text-anchor', 'start'))
     return f'<path aria-label="{text}" fill="{a["fill"]}" d="{d}"/>'
 out = re.sub(r'<text([^>]*)>([^<]*)</text>', repl, src)
+if len(sys.argv) > 3:
+    mv = open(sys.argv[3]).read()
+    vb = re.search(r'viewBox="([^"]*)"', mv).group(1)
+    inner = re.sub(r'^.*?<svg[^>]*>|</svg>\s*$', '', mv, flags=re.S).replace('id="g"', 'id="mk"').replace('url(#g)', 'url(#mk)')
+    def img(m):
+        a = dict(re.findall(r'([\w-]+)="([^"]*)"', re.sub(r'href="[^"]*"', '', m.group(0))))
+        return f'<svg x="{a["x"]}" y="{a["y"]}" width="{a["width"]}" height="{a["height"]}" viewBox="{vb}">{inner}</svg>'
+    out = re.sub(r'<image\b[^>]*/>', img, out, flags=re.S)
 out = out.replace('<svg ', '<svg role="img" aria-label="Wabokkio" ', 1)
 open(sys.argv[2], 'w').write(out)

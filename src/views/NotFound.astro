@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';
+import { t, r, type Lang } from '../i18n';
+const { lang } = Astro.props as { lang: Lang };
+const d = t(lang).notFound;
+---
+<Base lang={lang} page="notFound" title={d.title}>
+  <section class="section"><div class="wrap prose center"><h1>{d.title}</h1><p><a class="btn btn-primary" href={r('home', lang)}>{d.back}</a></p></div></section>
+</Base>

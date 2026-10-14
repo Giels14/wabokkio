@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2F6BFF"/><stop offset="1" stop-color="#FF3D7F"/></linearGradient></defs>
-<path d="M50 22c-20 0-32 18-32 40 0 18 12 30 32 30s32-12 32-30c0-22-12-40-32-40z" fill="url(#g)"/>
-<path d="M18 62c-6 6-8 14-6 20 6-2 10-8 10-14z M82 62c6 6 8 14 6 20-6-2-10-8-10-14z" fill="url(#g)"/>
-<path d="M50 42c-13 0-20 10-20 24 0 12 8 20 20 20s20-8 20-20c0-14-7-24-20-24z" fill="#fff"/>
-<circle cx="42" cy="56" r="3.6" fill="#14204A"/><circle cx="58" cy="56" r="3.6" fill="#14204A"/>
-<path d="M44 63h12l-6 6z" fill="#FF9A2E" stroke="#FF9A2E" stroke-linejoin="round" stroke-width="2"/>
-<ellipse cx="50" cy="26" rx="34" ry="7" fill="url(#g)"/><path d="M32 26c0-12 8-20 18-20s18 8 18 20z" fill="url(#g)"/>
-<rect x="32" y="20" width="36" height="4" rx="2" fill="#14204A" opacity=".6"/>
-<path d="M63 16l1.6 3.4 3.7.4-2.8 2.5.8 3.6-3.3-1.9-3.3 1.9.8-3.6-2.8-2.5 3.7-.4z" fill="#fff"/></svg>

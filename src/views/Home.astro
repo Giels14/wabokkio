@@ -1,0 +1,61 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import EnquiryForm from '../components/EnquiryForm.astro';
+import ResortCard from '../components/ResortCard.astro';
+import { resorts, company } from '../data/site';
+import { photo } from '../data/photos';
+import { SHOW_PARTNERS } from '../config';
+import { t, r, type Lang } from '../i18n';
+const { lang } = Astro.props as { lang: Lang };
+const d = t(lang);
+const hero = photo('hero');
+const feature = photo('feature');
+---
+<Base lang={lang} page="home">
+  <section class={`hero${hero ? ' has-photo' : ''}`}>
+    {hero && <Image src={hero} alt={d.hero.imageAlt} widths={[800, 1440, 2000]} sizes="100vw" loading="eager" fetchpriority="high" class="hero-photo" />}
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">{d.hero.eyebrow}</p>
+        <h1>{d.hero.title}</h1>
+        <p class="lead">{d.hero.lead}</p>
+      </div>
+      <EnquiryForm lang={lang} />
+    </div>
+  </section>
+
+  <section class="trust" aria-label={d.trust.aria}>
+    <div class="wrap trust-inner">
+      <span>✓ {d.trust.iata} {company.iata}</span>
+      <span>✓ {d.trust.quote}</span>
+      <span>✓ {d.trust.fee}</span>
+      <span>✓ {d.trust.advice}</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>{d.resorts.title}</h2>
+      <p class="section-lead">{d.resorts.lead}</p>
+      <div class="cards">{resorts.slice(0, 6).map((x) => <ResortCard r={x} lang={lang} />)}</div>
+      <p class="center"><a class="btn btn-ghost" href={r('destinations', lang)}>{d.resorts.all}</a></p>
+    </div>
+  </section>
+
+  <section class="section how">
+    <div class={`wrap${feature ? ' how-grid' : ''}`}>
+      <div>
+        <h2>{d.how.title}</h2>
+        <ol class="steps">
+          {d.how.steps.map(([h, p], i) => <li><span class="step-n">{i + 1}</span><h3>{h}</h3><p>{p}</p></li>)}
+        </ol>
+      </div>
+      {feature && <Image src={feature} alt={d.hero.imageAlt} widths={[500, 1000]} sizes="(max-width: 960px) 100vw, 480px" loading="lazy" class="feature-photo" />}
+    </div>
+  </section>
+
+  {SHOW_PARTNERS && <section class="partners" aria-label={d.partners}>
+    <div class="wrap partners-inner"><span class="partners-label">{d.partners}</span><span>Ratehawk</span><span>Expedia TAAP</span></div>
+  </section>}
+</Base>

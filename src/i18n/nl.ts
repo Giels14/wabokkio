@@ -1,0 +1,28 @@
+export default {
+  meta: { siteTitle: 'Wabokkio · Familiereizen op maat', description: 'Wabokkio zoekt de familiekamer die echt bij jullie gezin past. Persoonlijk advies van reizende ouders, tegen reisagenttarieven.' },
+  nav: { destinations: 'Bestemmingen', about: 'Over ons', cta: 'Vraag offerte aan', switchLabel: 'English', switchAria: 'Switch to English', skip: 'Naar inhoud', menu: 'Hoofdmenu', home: 'Wabokkio, naar home' },
+  hero: { eyebrow: 'Familiereizen op maat', title: 'De familiekamer die écht bij jullie gezin past', lead: 'Vertel ons wie er meegaat en wat jullie zoeken. Wij, reizende ouders, komen binnen 2 werkdagen met een persoonlijk voorstel tegen reisagenttarieven.', imageAlt: 'Gezin op vakantie' },
+  trust: { aria: 'Waarom Wabokkio', iata: 'Geregistreerd reisagent · IATA TIDS', quote: 'Offerte binnen 2 werkdagen', fee: 'Geen servicefee', advice: 'Persoonlijk advies van reizende ouders' },
+  resorts: { title: 'Onze favoriete familieresorts', lead: 'Een greep uit de resorts die we graag aanraden. Prijzen hangen af van jullie data en gezin, daarom maken we altijd een offerte op maat.', all: 'Alle bestemmingen', ask: 'Vraag prijs aan', illustration: 'Illustratie' },
+  how: { title: 'Hoe het werkt', steps: [
+    ['Vertel wie er meegaat', 'Bestemming, data, kamers en de leeftijden van de kinderen. Meer hebben we niet nodig.'],
+    ['Wij zoeken uit', 'We vergelijken kamers, kinderclubs en tarieven en kiezen wat echt bij jullie past.'],
+    ['Je krijgt een voorstel', 'Binnen 2 werkdagen een persoonlijke offerte met eerlijk advies. Vrijblijvend.'],
+    ['Genieten', 'Akkoord? Dan boeken wij het voor jullie. Jullie hoeven alleen nog de koffers te pakken.'],
+  ] },
+  partners: 'Onze partners',
+  destinations: { title: 'Bestemmingen', description: 'Familieresorts die Wabokkio aanraadt in Spanje, Portugal, Griekenland, Turkije, Marokko en Nederland.', lead: 'Resorts die we kennen en graag aanraden voor gezinnen. Staat jullie droombestemming er niet bij? Vraag het gewoon aan, we zoeken ook daarbuiten.' },
+  form: {
+    title: 'Waar willen jullie naartoe?', destination: 'Bestemming of resort', destinationPh: 'Bijv. Mallorca of Ikos Porto Petro', arrival: 'Aankomst', departure: 'Vertrek',
+    rooms: 'Kamers en reizigers', room: 'Kamer', adults: 'Volwassenen', children: 'Kinderen', addRoom: '+ Kamer toevoegen', removeRoom: 'Verwijder',
+    childAge: 'Leeftijd kind', choose: 'Kies', baby: '0 (baby)', years: 'jaar',
+    kidsHint: 'Van kinderen vragen we alleen de leeftijd bij aankomst, geen namen of geboortedata.',
+    name: 'Naam', email: 'E-mail', phone: 'Telefoon', optional: '(optioneel)', message: 'Bericht', messagePh: 'Wensen, budget, kinderclub, babybedje…',
+    submit: 'Vraag vrijblijvend een offerte aan', privacy: 'We gebruiken je gegevens alleen voor je offerte.', privacyLink: 'Privacyverklaring',
+    sending: 'Versturen…', errDates: 'De vertrekdatum moet na de aankomstdatum liggen.', errGeneric: 'Er ging iets mis. Probeer het opnieuw of mail naar travel@wabokkio.nl.', errNetwork: 'Geen verbinding. Probeer het opnieuw of mail naar travel@wabokkio.nl.',
+  },
+  thanks: { title: 'Bedankt voor je aanvraag!', body: 'We hebben je aanvraag ontvangen en sturen je een bevestiging per e-mail. Binnen 2 werkdagen hoor je van ons.', back: 'Terug naar home' },
+  notFound: { title: 'Oeps, deze pagina bestaat niet', back: 'Naar home' },
+  pages: { about: 'Over ons', privacy: 'Privacyverklaring', terms: 'Algemene voorwaarden' },
+  footer: { tagline: 'Familiereizen op maat, door reizende ouders.', kvk: 'KvK', privacy: 'Privacyverklaring', terms: 'Algemene voorwaarden' },
+};

@@ -1,6 +1,7 @@
 (function () {
   var form = document.getElementById('aanvraag');
   if (!form) return;
+  var T = JSON.parse(form.getAttribute('data-i18n') || '{}');
   var roomsEl = document.getElementById('rooms');
   var MAX_ROOMS = 4;
 
@@ -16,13 +17,13 @@
       var label = document.createElement('label');
       label.className = 'field';
       var span = document.createElement('span');
-      span.textContent = 'Leeftijd kind ' + i;
+      span.textContent = T.childAge + ' ' + i;
       var sel = document.createElement('select');
       sel.name = 'kamer-' + n + '-kind-' + i + '-leeftijd';
       sel.required = true;
-      var ph = document.createElement('option'); ph.value = ''; ph.textContent = 'Kies'; sel.appendChild(ph);
+      var ph = document.createElement('option'); ph.value = ''; ph.textContent = T.choose; sel.appendChild(ph);
       for (var a = 0; a <= 17; a++) {
-        var o = document.createElement('option'); o.value = String(a); o.textContent = a === 0 ? '0 (baby)' : a + ' jaar'; sel.appendChild(o);
+        var o = document.createElement('option'); o.value = String(a); o.textContent = a === 0 ? T.baby : a + ' ' + T.years; sel.appendChild(o);
       }
       if (keep[i - 1] !== undefined) sel.value = keep[i - 1];
       label.appendChild(span); label.appendChild(sel); box.appendChild(label);
@@ -40,7 +41,7 @@
     rooms.forEach(function (room, idx) {
       var n = idx + 1;
       room.setAttribute('data-room', String(n));
-      room.querySelector('.room-head strong').textContent = 'Kamer ' + n;
+      room.querySelector('.room-head strong').textContent = T.room + ' ' + n;
       room.querySelectorAll('[name]').forEach(function (el) { el.name = el.name.replace(/^kamer-\d+-/, 'kamer-' + n + '-'); });
     });
     form.kamers.value = String(rooms.length);
@@ -55,7 +56,7 @@
     clone.querySelector('[name$="volwassenen"]').value = '2';
     var head = clone.querySelector('.room-head');
     var btn = document.createElement('button');
-    btn.type = 'button'; btn.className = 'remove-room'; btn.textContent = 'Verwijder';
+    btn.type = 'button'; btn.className = 'remove-room'; btn.textContent = T.removeRoom;
     head.appendChild(btn);
     roomsEl.appendChild(clone);
     wire(clone); renumber();
@@ -72,8 +73,8 @@
   var q = new URLSearchParams(location.search).get('resort');
   if (q) form.bestemming.value = q.slice(0, 200);
   document.querySelectorAll('a.prefill').forEach(function (a) {
-    if (location.pathname !== '/') return; // op andere pagina's gewoon naar / navigeren
-    a.addEventListener('click', function (e) { e.preventDefault(); prefill(a.getAttribute('data-resort')); history.replaceState(null, '', '/?resort=' + encodeURIComponent(a.getAttribute('data-resort')) + '#aanvraag'); });
+    if (location.pathname !== T.home) return; // op andere pagina's gewoon naar / navigeren
+    a.addEventListener('click', function (e) { e.preventDefault(); prefill(a.getAttribute('data-resort')); history.replaceState(null, '', T.home + '?resort=' + encodeURIComponent(a.getAttribute('data-resort')) + '#aanvraag'); });
   });
 
   // Min-datum
@@ -86,16 +87,16 @@
     e.preventDefault();
     status.className = 'form-status';
     if (!form.checkValidity()) { form.reportValidity(); return; }
-    if (form.vertrek.value <= form.aankomst.value) { status.textContent = 'De vertrekdatum moet na de aankomstdatum liggen.'; status.classList.add('err'); return; }
+    if (form.vertrek.value <= form.aankomst.value) { status.textContent = T.errDates; status.classList.add('err'); return; }
     var btn = form.querySelector('button[type=submit]');
-    btn.disabled = true; status.textContent = 'Versturen…';
+    btn.disabled = true; status.textContent = T.sending;
     fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
       .then(function (r) { return r.json().catch(function () { return { ok: false }; }).then(function (j) { return { r: r, j: j }; }); })
       .then(function (res) {
-        if (res.r.ok && res.j.ok) { location.href = '/bedankt/'; return; }
-        status.textContent = (res.j && res.j.error) || 'Er ging iets mis. Probeer het opnieuw of mail naar travel@wabokkio.nl.';
+        if (res.r.ok && res.j.ok) { location.href = T.thanks; return; }
+        status.textContent = (res.j && res.j.error) || T.errGeneric;
         status.classList.add('err'); btn.disabled = false;
       })
-      .catch(function () { status.textContent = 'Geen verbinding. Probeer het opnieuw of mail naar travel@wabokkio.nl.'; status.classList.add('err'); btn.disabled = false; });
+      .catch(function () { status.textContent = T.errNetwork; status.classList.add('err'); btn.disabled = false; });
   });
 })();

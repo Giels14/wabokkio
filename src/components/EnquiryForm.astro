@@ -1,55 +1,59 @@
 ---
 import { resorts } from '../data/site';
+import { t, r, type Lang } from '../i18n';
+const { lang } = Astro.props as { lang: Lang };
+const f = t(lang).form;
 const siteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || '';
+const jsText = JSON.stringify({ room: f.room, removeRoom: f.removeRoom, childAge: f.childAge, choose: f.choose, baby: f.baby, years: f.years, sending: f.sending, errDates: f.errDates, errGeneric: f.errGeneric, errNetwork: f.errNetwork, thanks: r('thanks', lang), home: r('home', lang) });
 ---
-<form id="aanvraag" class="enquiry" method="post" action="/api/aanvraag" novalidate>
-  <h2 class="enquiry-title">Waar willen jullie naartoe?</h2>
+<form id="aanvraag" class="enquiry" method="post" action="/api/aanvraag" novalidate data-i18n={jsText}>
+  <h2 class="enquiry-title">{f.title}</h2>
+  <input type="hidden" name="taal" value={lang} />
   <div class="grid-3">
     <label class="field span-3-sm">
-      <span>Bestemming of resort</span>
-      <input name="bestemming" list="resort-list" required maxlength="200" placeholder="Bijv. Mallorca of Ikos Porto Petro" autocomplete="off" />
-      <datalist id="resort-list">{resorts.map((r) => <option value={r.name} />)}</datalist>
+      <span>{f.destination}</span>
+      <input name="bestemming" list="resort-list" required maxlength="200" placeholder={f.destinationPh} autocomplete="off" />
+      <datalist id="resort-list">{resorts.map((x) => <option value={x.name} />)}</datalist>
     </label>
-    <label class="field"><span>Aankomst</span><input type="date" name="aankomst" required /></label>
-    <label class="field"><span>Vertrek</span><input type="date" name="vertrek" required /></label>
+    <label class="field"><span>{f.arrival}</span><input type="date" name="aankomst" required /></label>
+    <label class="field"><span>{f.departure}</span><input type="date" name="vertrek" required /></label>
   </div>
 
   <fieldset class="rooms">
-    <legend>Kamers en reizigers</legend>
+    <legend>{f.rooms}</legend>
     <div id="rooms">
       <div class="room" data-room="1">
-        <div class="room-head"><strong>Kamer 1</strong></div>
+        <div class="room-head"><strong>{f.room} 1</strong></div>
         <div class="grid-2">
-          <label class="field"><span>Volwassenen</span>
+          <label class="field"><span>{f.adults}</span>
             <select name="kamer-1-volwassenen">{[1,2,3,4].map((n) => <option value={n} selected={n === 2}>{n}</option>)}</select>
           </label>
-          <label class="field"><span>Kinderen</span>
+          <label class="field"><span>{f.children}</span>
             <select name="kamer-1-kinderen" class="kids-count">{[0,1,2,3,4].map((n) => <option value={n}>{n}</option>)}</select>
           </label>
         </div>
         <div class="kid-ages"></div>
       </div>
     </div>
-    <button type="button" id="add-room" class="btn btn-ghost btn-sm">+ Kamer toevoegen</button>
+    <button type="button" id="add-room" class="btn btn-ghost btn-sm">{f.addRoom}</button>
     <input type="hidden" name="kamers" value="1" />
-    <p class="hint">Van kinderen vragen we alleen de leeftijd bij aankomst, geen namen of geboortedata.</p>
+    <p class="hint">{f.kidsHint}</p>
   </fieldset>
 
   <div class="grid-3">
-    <label class="field"><span>Naam</span><input name="naam" required maxlength="120" autocomplete="name" /></label>
-    <label class="field"><span>E-mail</span><input type="email" name="email" required maxlength="200" autocomplete="email" /></label>
-    <label class="field"><span>Telefoon <em>(optioneel)</em></span><input type="tel" name="telefoon" maxlength="40" autocomplete="tel" /></label>
+    <label class="field"><span>{f.name}</span><input name="naam" required maxlength="120" autocomplete="name" /></label>
+    <label class="field"><span>{f.email}</span><input type="email" name="email" required maxlength="200" autocomplete="email" /></label>
+    <label class="field"><span>{f.phone} <em>{f.optional}</em></span><input type="tel" name="telefoon" maxlength="40" autocomplete="tel" /></label>
   </div>
-  <label class="field"><span>Bericht <em>(optioneel)</em></span><textarea name="bericht" rows="3" maxlength="3000" placeholder="Wensen, budget, kinderclub, babybedje…"></textarea></label>
+  <label class="field"><span>{f.message} <em>{f.optional}</em></span><textarea name="bericht" rows="3" maxlength="3000" placeholder={f.messagePh}></textarea></label>
 
-  <!-- Honeypot: verborgen voor mensen, bots vullen het in -->
   <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off" /></label></div>
 
-  {siteKey ? <div class="cf-turnstile" data-sitekey={siteKey} data-language="nl"></div>
-           : <div class="turnstile-placeholder" aria-hidden="true"><!-- Cloudflare Turnstile: zet PUBLIC_TURNSTILE_SITE_KEY om te activeren --></div>}
+  {siteKey ? <div class="cf-turnstile" data-sitekey={siteKey} data-language={lang}></div>
+           : <div class="turnstile-placeholder" aria-hidden="true"></div>}
 
-  <button type="submit" class="btn btn-primary btn-lg">Vraag vrijblijvend een offerte aan</button>
-  <p class="privacy-line">We gebruiken je gegevens alleen voor je offerte. <a href="/privacyverklaring/">Privacyverklaring</a></p>
+  <button type="submit" class="btn btn-primary btn-lg">{f.submit}</button>
+  <p class="privacy-line">{f.privacy} <a href={r('privacy', lang)}>{f.privacyLink}</a></p>
   <p class="form-status" role="status" aria-live="polite"></p>
 </form>
 {siteKey && <script is:inline src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>}

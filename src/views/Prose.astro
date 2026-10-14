@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import { t, r, type Lang, type PageKey } from '../i18n';
+const { lang, page, translationNotice = false } = Astro.props as { lang: Lang; page: PageKey; translationNotice?: boolean };
+const title = t(lang).pages[page as 'about' | 'privacy' | 'terms'];
+---
+<Base lang={lang} page={page} title={title}>
+  <section class="section"><div class="wrap prose">
+    {translationNotice && <p class="notice">This is a translation. In case of differences, the <a href={r(page, 'nl')} hreflang="nl">Dutch version</a> prevails.</p>}
+    <slot />
+  </div></section>
+</Base>

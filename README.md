@@ -7,11 +7,14 @@ Wabokkio B.V. · KvK 58114262 · Groot Emiclaer 157, 3822 TL Amersfoort · IATA 
 ## Structuur
 | Pad | Inhoud |
 |---|---|
-| `src/pages/` | Home, Bestemmingen, Over ons, Privacyverklaring, Algemene voorwaarden, Bedankt, 404 |
+| `src/views/` | Paginasjablonen (één per paginatype, taal als prop) |
+| `src/pages/`, `src/pages/en/` | Dunne routebestanden NL (`/`) en EN (`/en/`) |
+| `src/i18n/` | `nl.ts` en `en.ts` (alle UI-teksten), `routes.ts` (URL's per taal, taalwisselaar, hreflang) |
+| `src/content/en/*.md` | Engelse teksten over ons, privacy, voorwaarden |
 | `src/content/*.md` | Teksten (over ons, privacy, voorwaarden) |
 | `src/data/site.ts` | Bedrijfsgegevens en resortkaarten (volgorde = volgorde op site) |
 | `src/config.ts` | `SHOW_PARTNERS` (standaard `false`): strook "Onze partners" (Ratehawk, Expedia TAAP, alleen tekst) boven de footer op home |
-| `public/wabokkio-logo-*.svg`, `favicon*` | Merkbestanden uit `/workspace/wabokkio/brand/`: `header` (header), `header-white` (donkere footer; er is geen witte stacked-versie), `stacked` (Nederlandse slogan, voor lichte achtergrond, mail en print; staat klaar maar wordt op de site nog niet gebruikt). In de logo's is de `<text>` omgezet naar paden met `scripts/svg-text-to-paths.py` (Nunito 800 / Inter 400), zodat ze als `<img>` overal gelijk renderen. Bij een nieuw logo opnieuw draaien. |
+| `public/wabokkio-logo-*.svg`, `favicon*` | Merkbestanden uit `/workspace/wabokkio/brand/`: `header` (header), `stacked-white` (donkere footer), `header-white` en `stacked` (reserve, mail/print). Omgezet met `python scripts/svg-text-to-paths.py <in.svg> <out.svg> wabokkio-mark-vector.svg`: tekst wordt paden (Nunito 800 / Inter 400) en de ingesloten raster-pinguïn wordt de vector-mark. Bij nieuwe logo's opnieuw draaien. |
 | `src/styles/tokens.css` | Merktokens (kleuren, fonts, radius) |
 | `public/js/form.js` | Formulierlogica (kamers, leeftijden kinderen, prefill vanuit "Vraag prijs aan") |
 | `public/_headers` | Security headers (CSP, HSTS, nosniff, Referrer-Policy, Permissions-Policy, frame-ancestors 'none') |
@@ -20,6 +23,36 @@ Wabokkio B.V. · KvK 58114262 · Groot Emiclaer 157, 3822 TL Amersfoort · IATA 
 | `worker/` | Cron-Worker die aanvragen ouder dan 12 maanden verwijdert |
 
 Er staan nergens prijzen op de site: alles is "op aanvraag" / "Vraag prijs aan". Er is (nog) geen Ratehawk-API-koppeling.
+
+## Talen (NL/EN)
+- Nederlands is standaard op `/`, Engels staat onder `/en/` (Astro i18n, `prefixDefaultLocale: false`). Elke pagina heeft `<html lang>`, canonical en hreflang `nl`, `en` en `x-default` (= nl).
+- **Engelse teksten zijn CONCEPT** (zelf geschreven). Vervangen door de vertaling van de designer op deze plekken:
+  - `src/i18n/en.ts` – alle knoppen, formulier, home, foutmeldingen in de browser
+  - `src/data/site.ts` – de `en:`-velden van de resortkaarten
+  - `src/content/en/about.md`, `privacy.md`, `terms.md` (haal de regel "DRAFT translation" weg)
+  - `functions/api/aanvraag.ts` – Engelse foutmeldingen en bevestigingsmail (zoek op `en ?`)
+- Engelse privacy en voorwaarden tonen bovenaan: "This is a translation. In case of differences, the Dutch version prevails." met een link naar de Nederlandse pagina.
+- Het formulier stuurt `taal` mee; de function antwoordt in die taal, stuurt de bevestiging in die taal en zet `[EN]` in het onderwerp van de notificatie. De taal wordt in D1 opgeslagen (kolom `taal`).
+
+## Foto's
+Zet foto's in `src/assets/photos/` (jpg, jpeg, webp, avif of png; liefst minstens 1600 px breed, liggend). Astro maakt er automatisch webp in meerdere formaten van, met lazy loading en alt-tekst. Ontbreekt een bestand, dan blijft de gradient met icoon staan. **Gebruik alleen eigen foto's of foto's met licentie, geen foto's van hotelwebsites.**
+
+| Bestand (zonder extensie) | Waar |
+|---|---|
+| `hero` | Achtergrond hero homepage (tekst staat links, dus onderwerp liefst rechts) |
+| `feature` | Foto naast "Hoe het werkt" |
+| `bestemmingen` | Header van de pagina Bestemmingen |
+| `resorts/ikos-porto-petro` | Kaart Ikos Porto Petro |
+| `resorts/martinhal-sagres` | Kaart Martinhal Sagres |
+| `resorts/hof-van-saksen` | Kaart Hof van Saksen |
+| `resorts/ikos-olivia` | Kaart Ikos Olivia |
+| `resorts/rixos-premium-belek` | Kaart Rixos Premium Belek |
+| `resorts/maxx-royal-belek` | Kaart Maxx Royal Golf Belek |
+| `resorts/grande-real-santa-eulalia` | Kaart Grande Real Santa Eulália Resort & Spa |
+| `resorts/fairmont-taghazout-bay` | Kaart Fairmont Taghazout Bay |
+| `resorts/paradis-plage` | Kaart Paradis Plage Surf Yoga & Spa |
+
+Voorbeeld: `src/assets/photos/resorts/martinhal-sagres.jpg`. Daarna `npm run build` en opnieuw deployen.
 
 ## Lokaal
 ```bash
@@ -40,6 +73,8 @@ npx wrangler pages dev dist
    ```bash
    npx wrangler d1 create wabokkio     # zet het database_id in wrangler.toml én worker/wrangler.toml
    npx wrangler d1 execute wabokkio --remote --file db/schema.sql
+   # bestaande database van vóór de Engelse versie: eenmalig
+   npx wrangler d1 execute wabokkio --remote --file db/migrations-0002-taal.sql
    ```
    Koppel in het Pages-project (*Settings → Bindings*) de D1-database als binding **`DB`** (of laat `wrangler.toml` het doen).
 4. **Omgevingsvariabelen** (Pages → Settings → Variables and secrets, voor Production en Preview):

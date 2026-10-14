@@ -1,24 +1,27 @@
 ---
 import Logo from './Logo.astro';
 import { company as c } from '../data/site';
+import { t, r, type Lang } from '../i18n';
+const { lang } = Astro.props as { lang: Lang };
+const d = t(lang);
 ---
 <footer class="site-footer">
   <div class="wrap footer-grid">
     <div>
-      <Logo variant="header-white" />
-      <p>Familiereizen op maat, door reizende ouders.</p>
+      <Logo lang={lang} variant="stacked-white" />
+      <p>{d.footer.tagline}</p>
     </div>
     <div>
       <strong>{c.name}</strong><br />
       {c.street}<br />{c.zip} {c.city}<br />
-      KvK {c.kvk}<br />
+      {d.footer.kvk} {c.kvk}<br />
       IATA TIDS {c.iata}
     </div>
     <div>
       <a href={`mailto:${c.email}`}>{c.email}</a><br />
       <a href={`tel:${c.phoneHref}`}>{c.phone}</a><br /><br />
-      <a href="/privacyverklaring/">Privacyverklaring</a><br />
-      <a href="/algemene-voorwaarden/">Algemene voorwaarden</a>
+      <a href={r('privacy', lang)}>{d.footer.privacy}</a><br />
+      <a href={r('terms', lang)}>{d.footer.terms}</a>
     </div>
   </div>
   <div class="wrap footer-bottom">© {new Date().getFullYear()} {c.name}</div>

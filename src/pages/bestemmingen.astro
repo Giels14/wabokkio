@@ -1,9 +1,4 @@
 ---
-import Base from '../layouts/Base.astro';
-import ResortCard from '../components/ResortCard.astro';
-import { resorts } from '../data/site';
+import V from '../views/Destinations.astro';
 ---
-<Base title="Bestemmingen" description="Familieresorts die Wabokkio aanraadt in Spanje, Portugal, Griekenland, Turkije, Marokko en Nederland.">
-  <section class="page-hero"><div class="wrap"><h1>Bestemmingen</h1><p class="lead">Resorts die we kennen en graag aanraden voor gezinnen. Staat jullie droombestemming er niet bij? Vraag het gewoon aan, we zoeken ook daarbuiten.</p></div></section>
-  <section class="section"><div class="wrap"><div class="cards">{resorts.map((r) => <ResortCard r={r} />)}</div></div></section>
-</Base>
+<V lang="nl" />
