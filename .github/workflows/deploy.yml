@@ -1,0 +1,35 @@
+# Bouwt de site en deployt naar Cloudflare Pages (project 'wabokkio') bij elke push naar main.
+# Vereist repo-secret CLOUDFLARE_API_TOKEN (account-token met alleen 'Cloudflare Pages: Edit').
+name: Deploy naar Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_ACCOUNT_ID: 2d1c0310ba071803dcf00f6ca4317ee4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      # Astro leest PUBLIC_TURNSTILE_SITE_KEY uit .env.production
+      - run: npm run build
+      # Draait vanuit de repo-root zodat functions/ en wrangler.toml (D1-binding) worden meegenomen
+      - name: Deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: npx --yes wrangler@4 pages deploy dist --project-name wabokkio --branch main --commit-hash "$GITHUB_SHA" --commit-message "${GITHUB_SHA::7}"
