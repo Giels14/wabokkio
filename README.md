@@ -120,4 +120,4 @@ npx wrangler pages dev dist
 6. Na de wissel: test mail in/uit via Hostnet, `dig MX wabokkio.nl`, en het formulier op productie.
 
 ## Security headers
-Zie `public/_headers`. De CSP staat alleen eigen bestanden toe plus `challenges.cloudflare.com` voor Turnstile; fonts (Nunito, Inter) zijn self-hosted via Fontsource, dus geen Google Fonts-verzoeken. Voeg je later analytics of andere scripts toe, pas dan de CSP aan. Zet HSTS `preload` alleen aan als alle subdomeinen HTTPS hebben (mail.wabokkio.nl!); haal `preload` anders weg vóór je het domein bij hstspreload.org indient.
+Zie `public/_headers`. De CSP staat alleen eigen bestanden toe plus `challenges.cloudflare.com` voor Turnstile; fonts (Nunito, Inter) zijn self-hosted via Fontsource, dus geen Google Fonts-verzoeken. Voeg je later analytics of andere scripts toe, pas dan de CSP aan. HSTS staat aan met `includeSubDomains` maar bewust zonder `preload`.
