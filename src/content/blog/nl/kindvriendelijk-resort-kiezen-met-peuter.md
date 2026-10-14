@@ -22,15 +22,15 @@ Kies een compact resort of een plek waar kamer, ontbijt, bassin en strand dicht 
 
 ## Slapen eerst, splash later
 
-Check of er een kinderbedje of ruimte voor je reisbedje is — en of dat gereserveerd staat, niet “misschien beschikbaar”. Verduisterende gordijnen, een rustige kamervleugel en liefst een lift of begane grond maken bedtijd een stuk milder. Een koelkastje voor melk en snacks is goud.
+Check of het resort een kinderbedje of ruimte voor je reisbedje heeft, en of ze het voor je reserveren in plaats van “misschien beschikbaar”. Verduisterende gordijnen, een rustige kamervleugel en liefst een lift of een kamer op de begane grond maken bedtijd een stuk makkelijker. Een koelkastje voor melk en snacks is goud.
 
 ## Water op peutermaat
 
-Vraag hoe diep het kinderbad écht is. Een splashpad of heel ondiep bassin is voor peuters vaak fijner dan een groot “kids pool” waar oudere kinderen duiken. Schaduw bij het water is geen luxe: een parasol of overkapping spaart roodheid en huilbuien.
+Vraag hoe diep het kinderbad is. Een splashpad of heel ondiep bassin is voor peuters vaak fijner dan een groot “kids pool” waar oudere kinderen duiken. Zoek schaduw bij het water: een parasol of overkapping scheelt je verbrande schouders en huilbuien.
 
 ## Eten zonder circus
 
-Flexibele buffet- of kindvriendelijke tijden, highchairs en de mogelijkheid tot eenvoudige hapjes later op de avond helpen enorm. All-inclusive kan fijn zijn met een peuter — minder gesjouw met tassen — mits het terrein niet enorm is en er genoeg rustige hoekjes zijn.
+Flexibele buffettijden, kinderstoelen en eenvoudige hapjes later op de avond maken het eten een stuk makkelijker. All-inclusive kan fijn zijn met een peuter, omdat je minder met tassen sjouwt. Let wel op dat het terrein niet enorm is en dat je genoeg rustige hoekjes vindt.
 
 ## Kidsclub? Check de leeftijd
 

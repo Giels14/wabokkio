@@ -14,7 +14,7 @@ tags:
 
 # Reizen met een baby én een peuter: chaos organiseren
 
-Eén kind op vakantie is een project. Twee onder de drie? Dat is projectmanagement met knuffels. Het kán heerlijk zijn — als je accepteert dat de dagen anders lopen dan vroeger en je één anker vasthoudt: rust voor iedereen, niet alles zien.
+Eén kind op vakantie is een project. Twee onder de drie? Dat is projectmanagement met knuffels. Het kán heerlijk zijn, als je accepteert dat je dagen anders lopen dan vroeger en je één anker vasthoudt: rust voor iedereen gaat voor alles zien.
 
 ## Eén gedeelde reset per dag
 
@@ -22,11 +22,11 @@ Baby en peuter dutten zelden synchroon. Mik op één blok op de kamer: lunch, fl
 
 ## Verblijf met ruimte en keuken
 
-Een appartement of family suite met aparte slaapplek, koelkast en bij voorkeur een wasmachine scheelt koffers vol kleding. Een veilig speelhoekje op de kamer betekent dat jij even kunt zitten terwijl de peuter speelt en de baby ligt. Vraag kinderbedje én reisbedje of wieg van tevoren aan — en laat bevestigen dat ze gereserveerd zijn.
+Een appartement of family suite met aparte slaapplek, koelkast en liefst een wasmachine scheelt je koffers vol kleding. Met een veilig speelhoekje op de kamer kun jij even zitten terwijl de peuter speelt en de baby ligt. Vraag kinderbedje én reisbedje of wieg van tevoren aan, en laat het hotel bevestigen dat ze gereserveerd zijn.
 
 ## Spullen: dubbel waar nodig, slim waar kan
 
-Twee sets luiers, billendoekjes en reservekleding in de handbagage. Eén gedeelde “onderwegtas” met snacks, speelgoedrotatie en medicatie. Draagzak voor de kleinste + compacte buggy voor de peuter (of omgekeerd, afhankelijk van wie wil lopen) is vaak de winnaarcombinatie. Oefen thuis wie welke rol heeft bij boarding: één ouder baby, één peuter — wisselen mag, improviseren op de gate is zwaarder.
+Twee sets luiers, billendoekjes en reservekleding in de handbagage. Eén gedeelde “onderwegtas” met snacks, speelgoedrotatie en medicatie. Een draagzak voor de kleinste en een compacte buggy voor de peuter (of omgekeerd, afhankelijk van wie wil lopen) werkt vaak het best. Spreek thuis af wie wie doet bij het boarden: de ene ouder neemt de baby, de andere de peuter. Wisselen kan later; improviseren bij de gate is zwaarder.
 
 ## Dagen met één hoofdingrediënt
 
@@ -34,6 +34,6 @@ Ochtend: één activiteit (stranduurtje, speeltuin, dierentuin-inleiding). Midda
 
 ## Directe vluchten en extra tijd
 
-Kies waar kan een directe vlucht en ruim overstapmarge. Pre-boarden is geen zwakte, het is logistiek. En ja: de eerste dag mag saai zijn. Uitpakken, kamer ontdekken, vroeg slapen. Dat is geen mislukte vakantie — dat is de start van een die wél lukt.
+Kies waar het kan een directe vlucht en ruime overstaptijd. Pre-boarden is logistiek, dus maak er gebruik van. En ja: de eerste dag mag saai zijn. Uitpakken, kamer ontdekken, vroeg slapen. Zo begin je aan een vakantie die wél lukt.
 
 Wil je een gezinsreis die past bij twee verschillende slaapschema’s? [Vraag vrijblijvend een voorstel aan](/aanvraag). Wij werken op aanvraag, zonder servicekosten, offerte binnen vijf werkdagen.

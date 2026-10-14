@@ -1,6 +1,6 @@
 ---
 title: "Vroege lente met peuter: bestemmingen die wél werken"
-description: "Mild weer, minder drukte, korte vluchten: waarom maart–mei goud kan zijn voor gezinnen met peuters — plus waar je op let."
+description: "Mild weer, minder drukte, korte vluchten: waarom maart–mei goud kan zijn voor gezinnen met peuters, en waar je op let."
 date: 2026-10-12
 slug: vroege-lente-bestemmingen-met-peuter
 lang: nl
@@ -14,19 +14,19 @@ tags:
 
 # Vroege lente met peuter: bestemmingen die wél werken
 
-Hoogzomer met een peuter: hitte, drukte, lange rijen bij het ijs. De vroege lente — denk maart tot mei — is vaak de stille winnaar. Milder weer, kortere wachttijden, en je mag overdag nog buiten zonder dat iedereen smelt.
+Hoogzomer met een peuter betekent hitte, drukte en lange rijen bij het ijs. De vroege lente, van maart tot mei, wint vaak in stilte. Je krijgt milder weer en kortere wachttijden, en je kunt overdag buiten zijn zonder weg te smelten.
 
 ## Waarom schouderseizoen fijn is
 
-Peuters houden van voorspelbaarheid en ruimte om te spelen. Minder toeristen betekent rustiger stranden, sneller een tafel en hotels die nog écht tijd hebben voor een kinderbedje. Vluchten en verblijven zijn vaak vriendelijker geprijsd dan in juli — handig als je op aanvraag plant en eerst een offerte wilt zien.
+Peuters houden van voorspelbaarheid en ruimte om te spelen. Met minder toeristen krijg je rustiger stranden, sneller een tafel en hotelpersoneel met tijd om een kinderbedje te regelen. Vluchten en verblijven kosten vaak minder dan in juli. Handig als je op aanvraag plant en eerst een offerte wilt zien.
 
 ## Zuid-Europa light
 
-Denk aan plekken met korte vluchten vanuit Nederland: bijvoorbeeld de Algarve, delen van Spanje of de Balearen in april–mei. Het water kan nog fris zijn, maar zon, speeltuinen en kindvriendelijke restaurantjes zijn er volop. Kies een basis met vlakke paden, een ondiep bassin of splashhoek, en schaduw — in de lente is de zon al sterker dan je denkt.
+Denk aan bestemmingen met een korte vlucht vanuit Nederland: de Algarve, delen van Spanje of de Balearen in april–mei. Het water kan nog fris zijn, maar je vindt er volop zon, speeltuinen en kindvriendelijke restaurantjes. Kies een basis met vlakke paden, een ondiep bad of splashhoek, en schaduw. In de lente is de zon al sterker dan je denkt.
 
 ## Stad + groen in plaats van alleen museum
 
-Steden met parken en speeltuinen (en buggyvriendelijke stukken) werken beter dan een agenda vol musea. Eén ochtenduitstapje, ’s middags rust: dat ritme past bij peuters, of je nu naar een zuidelijke kust of een groenere Noord-Europese stad neigt. Check regenplan: indoor speeltuin, zwembad under cover, of gewoon de kamer met speelgoed.
+Steden met parken en speeltuinen (en buggyvriendelijke stukken) werken beter dan een agenda vol musea. Eén ochtenduitstapje, ’s middags rust: dat ritme past bij peuters, of je nu naar een zuidelijke kust of een groenere Noord-Europese stad neigt. Zorg voor een regenplan: een indoor speeltuin, een overdekt zwembad of de kamer met speelgoed.
 
 ## Wat je altijd nagaat
 
@@ -42,6 +42,6 @@ Blijf liever vijf tot zeven nachten op één adres dan drie hotels in een week. 
 
 ## Laat het plan om jullie heen groeien
 
-Elk gezin heeft andere nap-tijden, andere energie, andere “must-sees”. Daarom werken wij op aanvraag: jullie vullen een kort formulier in, wij denken mee over bestemming en timing, en binnen vijf werkdagen ligt er een persoonlijke offerte — zonder servicekosten en zonder prijzen-van-de-plank.
+Elk gezin heeft eigen dutjestijden, energie en “must-sees”. Daarom werken wij op aanvraag: jullie vullen een kort formulier in, wij denken mee over bestemming en timing, en binnen vijf werkdagen hebben jullie een persoonlijke offerte. Zonder servicekosten en zonder prijzen van de plank.
 
 [Vraag jullie lentevoorstel aan](/aanvraag) en ontdek welke vroege-lenteplek bij jullie peuter past.

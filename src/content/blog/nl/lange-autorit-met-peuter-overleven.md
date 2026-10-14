@@ -14,7 +14,7 @@ tags:
 
 # Lange autorit met peuter: zo overleef je de kilometers
 
-“Nog even, schat.” Vijf uur later zeg je het nog steeds. Een lange autorit met een peuter is geen stiltesessie, maar met slimme timing en een goed gevulde “overleefbak” wordt het wél doenbaar — en soms zelfs gezellig.
+“Nog even, schat.” Vijf uur later zeg je het nog steeds. Een lange autorit met een peuter wordt geen stiltesessie, maar met slimme timing en een goed gevulde “overleefbak” is het te doen. Soms wordt het zelfs gezellig.
 
 ## Plan rond het dutje
 
@@ -22,7 +22,7 @@ Het langste stuk van de rit plannen tijdens de dutjetijd is goud waard. Veel peu
 
 ## Stop elke 1,5 tot 2 uur
 
-Peuters hebben beweging nodig. Een stop van tien minuten bij een speeltuintje of een grasveldje doet wonderen voor het humeur. Bouw dat in je navigatie in alsof het tankstops zijn — want dat zijn ze ook, alleen dan voor energie in plaats van benzine.
+Peuters moeten bewegen. Een stop van tien minuten bij een speeltuintje of grasveldje doet wonderen voor hun humeur. Plan die stops in je route zoals je tankstops plant. Je tankt alleen energie in plaats van benzine.
 
 ## Snackrotatie, niet snackberg
 
@@ -38,6 +38,6 @@ Binnen handbereik (van jou, niet van de peuter alleen): billendoekjes, reservekl
 
 ## Verwacht vertraging
 
-Reken alsof de rit een paar uur langer duurt. Files, wc-stops en “ik wil uitstappen”-momenten horen erbij. Die buffer houdt jullie kalm — en dat voelt je peuter meteen aan.
+Reken alsof de rit een paar uur langer duurt. Files, wc-stops en “ik wil eruit”-momenten horen erbij. Met die buffer blijven jullie kalm, en dat voelt je peuter meteen.
 
 Zin in een vakantie waarbij de reis naar de bestemming net zo doordacht is als het resort zelf? [Vraag een vrijblijvend voorstel aan](/aanvraag). Op aanvraag, zonder servicekosten, offerte binnen vijf werkdagen.

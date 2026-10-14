@@ -163,14 +163,14 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   try {
     await sendMail(env, en ? {
       to: [data.email], reply_to: to,
-      subject: 'We have received your request – Wabokkio',
-      text: `Hi ${data.name},\n\nThank you for your request! You will hear from us within 5 working days with a personal proposal.\n\nYour request (ref ${ref}):\n${summaryEn}\n\nWould you like to add anything? Just reply to this email.\n\nKind regards,\nGiels and Marjanne\nWabokkio · travel@wabokkio.nl · +31 6 43779858\n`,
-      html: `<p>Hi ${esc(data.name)},</p><p>Thank you for your request! You will hear from us <strong>within 5 working days</strong> with a personal proposal.</p><p><strong>Your request (ref ${ref}):</strong><br>${esc(summaryEn).replace(/\n/g, '<br>')}</p><p>Would you like to add anything? Just reply to this email.</p><p>Kind regards,<br>Giels and Marjanne<br>Wabokkio · <a href="mailto:travel@wabokkio.nl">travel@wabokkio.nl</a> · +31 6 43779858</p>`,
+      subject: 'Wabokkio: we have received your request',
+      text: `Hi ${data.name},\n\nThank you for your request! You will hear from us within 5 working days with a personal proposal.\n\nYour request (ref ${ref}):\n${summaryEn}\n\nWould you like to add anything? Reply to this email.\n\nKind regards,\nGiels and Marjanne\nWabokkio · travel@wabokkio.nl · +31 6 43779858\n`,
+      html: `<p>Hi ${esc(data.name)},</p><p>Thank you for your request! You will hear from us <strong>within 5 working days</strong> with a personal proposal.</p><p><strong>Your request (ref ${ref}):</strong><br>${esc(summaryEn).replace(/\n/g, '<br>')}</p><p>Would you like to add anything? Reply to this email.</p><p>Kind regards,<br>Giels and Marjanne<br>Wabokkio · <a href="mailto:travel@wabokkio.nl">travel@wabokkio.nl</a> · +31 6 43779858</p>`,
     } : {
       to: [data.email], reply_to: to,
-      subject: 'We hebben je aanvraag ontvangen – Wabokkio',
-      text: `Hoi ${data.name},\n\nBedankt voor je aanvraag! Binnen 5 werkdagen krijg je een reactie van ons met een persoonlijk voorstel.\n\nJe aanvraag (ref ${ref}):\n${summaryNl}\n\nWil je nog iets aanvullen? Beantwoord dan gewoon deze e-mail.\n\nHartelijke groet,\nGiels en Marjanne\nWabokkio · travel@wabokkio.nl · +31 6 43779858\n`,
-      html: `<p>Hoi ${esc(data.name)},</p><p>Bedankt voor je aanvraag! <strong>Binnen 5 werkdagen</strong> krijg je een reactie van ons met een persoonlijk voorstel.</p><p><strong>Je aanvraag (ref ${ref}):</strong><br>${esc(summaryNl).replace(/\n/g, '<br>')}</p><p>Wil je nog iets aanvullen? Beantwoord dan gewoon deze e-mail.</p><p>Hartelijke groet,<br>Giels en Marjanne<br>Wabokkio · <a href="mailto:travel@wabokkio.nl">travel@wabokkio.nl</a> · +31 6 43779858</p>`,
+      subject: 'Wabokkio: we hebben je aanvraag ontvangen',
+      text: `Hoi ${data.name},\n\nBedankt voor je aanvraag! Binnen 5 werkdagen krijg je een reactie van ons met een persoonlijk voorstel.\n\nJe aanvraag (ref ${ref}):\n${summaryNl}\n\nWil je nog iets aanvullen? Beantwoord dan deze e-mail.\n\nHartelijke groet,\nGiels en Marjanne\nWabokkio · travel@wabokkio.nl · +31 6 43779858\n`,
+      html: `<p>Hoi ${esc(data.name)},</p><p>Bedankt voor je aanvraag! <strong>Binnen 5 werkdagen</strong> krijg je een reactie van ons met een persoonlijk voorstel.</p><p><strong>Je aanvraag (ref ${ref}):</strong><br>${esc(summaryNl).replace(/\n/g, '<br>')}</p><p>Wil je nog iets aanvullen? Beantwoord dan deze e-mail.</p><p>Hartelijke groet,<br>Giels en Marjanne<br>Wabokkio · <a href="mailto:travel@wabokkio.nl">travel@wabokkio.nl</a> · +31 6 43779858</p>`,
     });
   } catch (e) {
     console.error('Bevestiging mislukt', e);

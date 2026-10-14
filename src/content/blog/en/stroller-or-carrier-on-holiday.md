@@ -14,11 +14,11 @@ tags:
 
 # Stroller or carrier on holiday? (Hint: often both)
 
-The eternal family-chat debate: “Do we take the stroller or the carrier?” Spoiler: it depends on the terrain — and many parents find the combo feels calmest.
+The eternal family-chat debate: “Do we take the stroller or the carrier?” It depends on the terrain, and many parents find that taking both feels calmest.
 
 ## The stroller: mobile naps and storage
 
-A compact travel stroller shines on smooth paths, in cities with pavements, and at the airport. Your toddler can nap while you keep moving, and there’s room for the beach bag or shopping. Check whether your model folds small enough for cabin bags or the overhead locker — airline rules vary. Gate-checking works, but expect waiting and sometimes a dent.
+A compact travel stroller works best on smooth paths, in cities with pavements, and at the airport. Your toddler can nap while you keep moving, and you have room for the beach bag or shopping. Check whether your model folds small enough for the cabin or the overhead locker, because airline rules vary. Gate-checking works, but expect waiting and sometimes a dent.
 
 ## The carrier: hands free, any terrain
 
@@ -30,15 +30,15 @@ Many families do this: stroller to the gate (handy for naps and bags), fold or g
 
 ## Destination decides
 
-City with cobbles or lots of stairs? Lean on the carrier. Resort with flat paths and pool loops? Stroller. Beach? Often neither on the sand itself — but a carrier for the walk there, or a beach wagon. If you’re counting on public transport for nap time, check stroller access first.
+City with cobbles or lots of stairs? Lean on the carrier. Resort with flat paths and pool loops? Stroller. Beach? On the sand itself you often use neither, but a carrier or beach wagon gets you there. If you’re counting on public transport for nap time, check stroller access first.
 
 ## Less is sometimes more
 
-Don’t bring a full-size pushchair “just in case”. Choose light and familiar: practise the fold at home once. A toddler who knows the stroller climbs in faster when tiredness hits.
+Leave the full-size pushchair at home. Choose light and familiar: practise the fold at home once. A toddler who knows the stroller climbs in faster when tiredness hits.
 
 
 ## What you can test at home
 
-Wear your toddler in the carrier for a fifteen-minute shop run. Fold and unfold the travel stroller until it’s a reflex. Check your child’s weight against your carrier’s guidelines. That way you know what feels good before the holiday — not on a moving walkway at the airport.
+Wear your toddler in the carrier for a fifteen-minute shop run. Fold and unfold the travel stroller until you can do it without thinking. Check your child’s weight against your carrier’s guidelines. Then you know what feels good before the holiday, instead of finding out on a moving walkway at the airport.
 
-Want a trip where transfers, terrain and naps actually line up? [Request a free proposal](/en/request). On request only, no service fee, quote within five working days.
+Want a trip where transfers, terrain and naps line up? [Request a free proposal](/en/request). On request only, no service fee, quote within five working days.

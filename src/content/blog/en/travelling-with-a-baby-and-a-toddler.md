@@ -14,7 +14,7 @@ tags:
 
 # Travelling with a baby and a toddler: organising the beautiful chaos
 
-One child on holiday is a project. Two under three? That’s project management with soft toys. It can be wonderful — if you accept that days look different than before and you hold one anchor: rest for everyone, not seeing everything.
+One child on holiday is a project. Two under three? That’s project management with soft toys. It can be wonderful if you accept that your days look different than before and you hold on to one anchor: rest for everyone comes before seeing everything.
 
 ## One shared reset per day
 
@@ -22,11 +22,11 @@ Baby and toddler rarely nap in sync. Aim for one block back at the room: lunch, 
 
 ## Stay with space and a kitchen
 
-An apartment or family suite with a separate sleep spot, fridge and ideally a washing machine saves whole suitcases of clothes. A safe play corner in the room means you can sit while the toddler plays and the baby rests. Request a cot and travel cot or bassinet ahead — and get confirmation they’re reserved.
+An apartment or family suite with a separate sleep spot, a fridge and ideally a washing machine saves you whole suitcases of clothes. A safe play corner in the room lets you sit down while the toddler plays and the baby rests. Request a cot and a travel cot or bassinet ahead, and ask the hotel to confirm they've reserved them.
 
 ## Gear: double where needed, smart where you can
 
-Two sets of nappies, wipes and spare clothes in hand luggage. One shared “on-the-go” bag with snacks, toy rotation and medication. Carrier for the smallest plus a compact stroller for the toddler (or the reverse, depending who wants to walk) is often the winning combo. Practise at home who handles whom at boarding: one parent baby, one toddler — swapping is fine; improvising at the gate is harder.
+Two sets of nappies, wipes and spare clothes in hand luggage. One shared “on-the-go” bag with snacks, toy rotation and medication. A carrier for the smallest plus a compact stroller for the toddler (or the reverse, depending on who wants to walk) often works best. Agree at home who handles whom at boarding: one parent takes the baby, the other the toddler. You can swap later; improvising at the gate is harder.
 
 ## Days with one main ingredient
 
@@ -34,6 +34,6 @@ Morning: one activity (beach hour, playground, a gentle zoo intro). Afternoon: b
 
 ## Direct flights and extra time
 
-Choose a direct flight where you can and a generous connection buffer. Pre-boarding isn’t weakness, it’s logistics. And yes: day one is allowed to be boring. Unpack, explore the room, sleep early. That’s not a failed holiday — that’s the start of one that works.
+Choose a direct flight where you can and a generous connection buffer. Pre-boarding is logistics, so take it. And yes: day one is allowed to be boring. Unpack, explore the room, sleep early. You're starting a holiday that works.
 
 Want a family trip that fits two different sleep schedules? [Request a free proposal](/en/request). We work on request only, with no service fee, and send a quote within five working days.

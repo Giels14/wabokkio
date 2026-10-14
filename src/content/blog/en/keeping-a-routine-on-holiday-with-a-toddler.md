@@ -1,6 +1,6 @@
 ---
 title: "Keeping a routine on holiday with a toddler (without becoming the holiday police)"
-description: "Which parts of the home schedule to keep — and where you can flex — for a calmer toddler holiday."
+description: "Which parts of the home schedule to keep and where you can flex, for a calmer toddler holiday."
 date: 2026-10-05
 slug: keeping-a-routine-on-holiday-with-a-toddler
 lang: en
@@ -14,7 +14,7 @@ tags:
 
 # Keeping a routine on holiday with a toddler (without becoming the holiday police)
 
-Holiday means no schedule… until your toddler starts singing at 5:17 a.m. A little routine isn’t boring — it’s the glue that makes adventure possible. The trick: keep the anchors, loosen the details.
+Holiday means no schedule… until your toddler starts singing at 5:17 a.m. A little routine holds the adventure together. Keep the anchors and loosen the details.
 
 ## Bring three anchors
 
@@ -30,7 +30,7 @@ Plan the “big” outing in morning energy. After lunch, return to the room or 
 
 ## Flexible where it can be
 
-Different breakfast times, a later dinner, the odd nap in the stroller instead of the bed: all fine. Miss a nap? Move bedtime thirty to sixty minutes earlier rather than forcing a “holiday bedtime”. Screens may sometimes save a rest moment — you set the boundary, not the guilt.
+Different breakfast times, a later dinner, the odd nap in the stroller instead of the bed: all fine. Missed a nap? Move bedtime thirty to sixty minutes earlier rather than forcing a “holiday bedtime”. A screen can rescue a rest moment now and then. You set the limit, and you can leave the guilt at home.
 
 ## Travel cot as the sleep base
 
@@ -38,11 +38,11 @@ Set up the travel cot or sleep space as soon as you arrive. Let your child play 
 
 ## Back home
 
-The first days at home can tighten the schedule again. Toddlers often bounce back quickly when the anchors feel familiar. So will you — after coffee.
+Once you're home, you can tighten the schedule again in the first days. Toddlers often bounce back quickly when the anchors feel familiar. You will too, after a coffee.
 
 
 ## Parents need a mini-routine too
 
-Swap evening duties: one parent does bedtime, the other tidies or showers. Plan a short “adult half-hour” after toddler sleep — tea on the balcony, an episode with earbuds. Rested parents hold the anchors more easily. And if a night goes sideways: starting again the next day is enough. Perfect holidays don’t exist; good-enough ones do.
+Swap evening duties: one parent does bedtime, the other tidies up or showers. Plan a short “adult half-hour” after the toddler falls asleep, with tea on the balcony or an episode with earbuds. Rested parents hold the anchors more easily. If a night goes sideways, start again the next day. Your holiday doesn't need to be perfect to be good.
 
 Want a holiday built around your rhythm, not the other way round? [Fill in the request form](/en/request). No prices on the site, no service fee, personal quote within five working days.

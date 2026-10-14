@@ -6,7 +6,7 @@ date: 2026-10-14
 ---
 
 # Packing list for flying with kids
-*Wabokkio – Family travel, made easy*
+*Wabokkio · Family travel, made easy*
 
 **Documents & money**
 - [ ] Passport/ID for everyone

@@ -18,7 +18,7 @@ Je landt, de zon schijnt, en je peuter is klaarwakker terwijl jij stiekem een du
 
 ## Eerst: hoe groot is de verschuiving?
 
-Bij één tot drie uur tijdsverschil en een kort verblijf kun je vaak gewoon op “thuistijd” blijven. Dan hoef je geen schema om te gooien. Gaat het om vier uur of meer, of blijf je langer dan een week? Dan is omschakelen naar lokale tijd meestal fijner. Reken ruwweg op ongeveer één aanpassingsdag per tijdzone — geen harde wet, wel een handige mindset.
+Bij één tot drie uur tijdsverschil en een kort verblijf kun je vaak op “thuistijd” blijven. Dan hoef je geen schema om te gooien. Gaat het om vier uur of meer, of blijf je langer dan een week? Schakel dan om naar lokale tijd. Reken op ongeveer één aanpassingsdag per tijdzone. Zie dat als vuistregel, niet als wet.
 
 ## Licht is je beste vriend
 
@@ -30,7 +30,7 @@ Een lange, “verkeerde” middagdut voelt als redding, maar duwt de bedtijd vaa
 
 ## Maaltijden op lokale tijd
 
-Eten helpt het lichaam mee te schakelen. Probeer ontbijt, lunch en diner zo snel mogelijk op lokale uren te plannen, ook als slaap nog een beetje rommelt. Een vertrouwd bedritueel — knuffel, boekje, liedje — mag wél meereizen. Dat anker voelt als thuis, waar je ook bent.
+Eten helpt het lichaam mee te schakelen. Plan ontbijt, lunch en diner zo snel mogelijk op lokale tijden, ook als het slapen nog rommelt. Neem het vertrouwde bedritueel mee: knuffel, boekje, liedje. Dat anker voelt als thuis, waar je ook bent.
 
 ## Aanpassen vóór vertrek? Optioneel
 
@@ -38,6 +38,6 @@ Drie of vier dagen van tevoren bedtijd steeds een kwartiertje tot halfuur opschu
 
 ## Realistische verwachtingen
 
-Plan de eerste dagen licht: speeltuin, ijsje, korte wandeling. Geen marathon van attracties. En onthoud: peuters passen zich vaak sneller aan dan volwassenen. Jij bent de jetlagkampioen die ’s nachts nog even wakker ligt. Dat hoort erbij — en het gaat over.
+Plan de eerste dagen licht: speeltuin, ijsje, korte wandeling. Sla de marathon van attracties over. Peuters passen zich vaak sneller aan dan volwassenen, dus misschien ben jij degene die ’s nachts nog wakker ligt. Dat hoort erbij, en het gaat over.
 
-Klaar voor een vakantie waarbij slapen en reizen écht meegenomen zijn in het plan? [Vraag vrijblijvend een voorstel aan](/aanvraag). Geen prijzen op de site, geen servicekosten: binnen vijf werkdagen ontvang je een persoonlijke offerte.
+Klaar voor een vakantie waarbij slapen en reizen al in het plan zitten? [Vraag vrijblijvend een voorstel aan](/aanvraag). Geen prijzen op de site, geen servicekosten: binnen vijf werkdagen ontvang je een persoonlijke offerte.

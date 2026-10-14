@@ -18,7 +18,7 @@ You land, the sun is out, and your toddler is wide awake while you secretly want
 
 ## First: how big is the shift?
 
-For a one- to three-hour time change and a short trip, staying on “home time” often works. No need to rewrite the schedule. Crossing four hours or more, or staying longer than a week? Switching to local time is usually nicer. Roughly expect about one adjustment day per time zone — not a hard rule, just a useful mindset.
+For a one- to three-hour time change and a short trip, staying on “home time” often works. You don't need to rewrite the schedule. Crossing four hours or more, or staying longer than a week? Then switch to local time. Expect about one adjustment day per time zone. Treat that as a rule of thumb, not a law.
 
 ## Light is your best friend
 
@@ -30,7 +30,7 @@ A long “wrong” afternoon nap feels like a rescue, but it often wrecks bedtim
 
 ## Meals on local time
 
-Food helps the body shift. Try to line up breakfast, lunch and dinner with local hours as soon as you can, even if sleep is still a bit messy. A familiar bedtime ritual — lovey, book, song — should travel with you. That anchor feels like home, wherever you are.
+Food helps the body shift. Line up breakfast, lunch and dinner with local hours as soon as you can, even if sleep is still messy. Bring the familiar bedtime ritual along: lovey, book, song. That anchor feels like home, wherever you are.
 
 ## Pre-adjust before you leave? Optional
 
@@ -38,6 +38,6 @@ Shifting bedtime by fifteen to thirty minutes a night for three or four days tow
 
 ## Realistic expectations
 
-Keep the first days light: playground, ice cream, a short walk. No attraction marathons. And remember: toddlers often adapt faster than adults. You’re the jet-lag champion still awake at 2 a.m. That’s normal — and it passes.
+Keep the first days light: playground, ice cream, a short walk. Skip the attraction marathons. Toddlers often adapt faster than adults, so you may be the one still awake at 2 a.m. That's normal, and it passes.
 
 Ready for a holiday where sleep and travel are built into the plan? [Request a free proposal](/en/request). No prices on the site, no service fee: you’ll get a personal quote within five working days.

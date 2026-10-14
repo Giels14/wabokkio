@@ -14,7 +14,7 @@ tags:
 
 # Zonveiligheid met peuters op vakantie: schaduw, hoed en slim smeren
 
-Zon hoort bij vakantie. Verbrande schoudertjes niet. Met peuters werkt zonveiligheid het best als een laagjessysteem — niet als één flesje SPF dat alles moet oplossen.
+Zon hoort bij vakantie. Verbrande schoudertjes niet. Met peuters werkt zonveiligheid het best in laagjes: schaduw, kleding en timing doen het meeste werk voordat de fles SPF tevoorschijn komt.
 
 ## Schaduw is laag één
 
@@ -26,7 +26,7 @@ Lichte, stevig geweven kleding of UV-zwemkleding met lange mouwen dekt meer dan 
 
 ## Smeer slim: laag drie
 
-Kies een breed-spectrum zonnebrandmiddel (UVA én UVB) met minstens SPF 30. Smeer 15 tot 30 minuten vóór je naar buiten gaat, generous — vooral gezicht, oren, handen, voeten en knieholtes. Opnieuw aanbrengen ongeveer elke twee uur, en sneller na zwemmen, zweten of afdrogen. Bewolkt weer telt mee: een groot deel van de UV komt er alsnog door, en zand en water kaatsen stralen terug.
+Kies een breedspectrum-zonnebrandmiddel (UVA én UVB) met minstens SPF 30. Smeer 15 tot 30 minuten voordat je naar buiten gaat royaal in, met extra aandacht voor gezicht, oren, handen, voeten en knieholtes. Smeer ongeveer elke twee uur opnieuw, en eerder na zwemmen, zweten of afdrogen. Bewolkt weer telt mee: een groot deel van de UV komt er alsnog door, en zand en water kaatsen stralen terug.
 
 ## Baby’s en gevoelige huid
 
@@ -43,6 +43,6 @@ Bied water vaak aan, ook als je kind niet vraagt. Roodheid, hangerigheid of over
 
 ## Reflectie en hoogte niet vergeten
 
-Op het strand, bij het zwembad of op sneeuw kaatst UV terug; je kunt sneller verbranden dan je denkt, ook in de schaduwrand. Op hogere bestemmingen is de zon feller. Neem dus genoeg crème mee (mini’s voor onderweg, een grotere tube voor de kamer) en stel een telefoonherinnering in voor hersmeren — want tussen emmertjes en golven vergeet je de klok.
+Op het strand, bij het zwembad of op sneeuw kaatst UV terug, dus je verbrandt sneller dan je denkt, ook aan de rand van de schaduw. Hoger in de bergen is de zon feller. Neem genoeg crème mee (mini’s voor onderweg, een grotere tube voor de kamer) en zet een herinnering op je telefoon om opnieuw te smeren. Tussen emmertjes en golven vergeet je de klok.
 
 Wil je een bestemming waar schaduw, timing en kindvriendelijke plekken al in het plan zitten? [Vraag een voorstel aan](/aanvraag). Geen servicekosten, offerte binnen vijf werkdagen.

@@ -14,15 +14,15 @@ tags:
 
 # Long car drive with a toddler: surviving the kilometres
 
-“Almost there, sweetheart.” Five hours later you’re still saying it. A long car drive with a toddler is never a silent retreat, but smart timing and a well-stocked “survival crate” make it doable — and sometimes even fun.
+“Almost there, sweetheart.” Five hours later you’re still saying it. A long car drive with a toddler won't be a silent retreat, but smart timing and a well-stocked “survival crate” make it doable, and sometimes even fun.
 
 ## Plan around the nap
 
-Scheduling the longest stretch for nap time is gold. Many toddlers sleep beautifully with the gentle rock of the car. Leave just before the nap, or start early in the morning while they’re still half in sleep mode. Miss that window and every following hour gets heavier.
+Scheduling the longest stretch for nap time is gold. Many toddlers sleep beautifully with the gentle rock of the car. Leave right before the nap, or start early in the morning while they’re still half in sleep mode. Miss that window and every following hour gets heavier.
 
 ## Stop every 1.5 to 2 hours
 
-Toddlers need to move. A ten-minute break at a playground or grassy patch works wonders for mood. Build those stops into your navigation like fuel stops — because that’s what they are, only for energy instead of petrol.
+Toddlers need to move. A ten-minute break at a playground or grassy patch works wonders for their mood. Plan those stops into your route like fuel stops. They refuel energy instead of petrol.
 
 ## Snack rotation, not snack mountain
 
@@ -34,10 +34,10 @@ One favourite lovey, a few cheap “new” toys you reveal one by one, a playlis
 
 ## The survival crate within reach
 
-Within your reach (not only the toddler’s): wipes, spare clothes for child and parent, a plastic bag for dirty items, dummy or lovey, and a cloth. Spills, leaks and “I’m hungry NOW” always happen just as you hit traffic.
+Within your reach (not only the toddler’s): wipes, spare clothes for child and parent, a plastic bag for dirty items, dummy or lovey, and a cloth. Spills, leaks and “I’m hungry NOW” tend to happen as soon as you hit traffic.
 
 ## Expect delays
 
-Plan as if the drive will take a couple of hours longer. Traffic, toilet stops and “I want to get out” moments are part of the deal. That buffer keeps you calm — and your toddler feels that instantly.
+Plan as if the drive will take a couple of hours longer. Traffic, toilet stops and “I want to get out” moments are part of the deal. That buffer keeps you calm, and your toddler picks up on that straight away.
 
 Fancy a holiday where the journey is as thoughtfully planned as the resort itself? [Request a free proposal](/en/request). On request only, no service fee, quote within five working days.

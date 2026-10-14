@@ -14,7 +14,7 @@ tags:
 
 # Sun safety with toddlers on holiday: shade, hats and smart sunscreen
 
-Sun belongs on holiday. Burnt little shoulders don’t. With toddlers, sun safety works best as a layer system — not as one bottle of SPF that has to solve everything.
+Sun belongs on holiday. Burnt little shoulders don’t. With toddlers, sun safety works best in layers, with shade, clothing and timing doing most of the work before the SPF bottle comes out.
 
 ## Shade is layer one
 
@@ -26,7 +26,7 @@ Light, tightly woven clothes or long-sleeve UV swimwear cover more than cream al
 
 ## Apply smart: layer three
 
-Choose broad-spectrum sunscreen (UVA and UVB) with at least SPF 30. Apply 15 to 30 minutes before you go out, generously — especially face, ears, hands, feet and the backs of knees. Reapply about every two hours, and sooner after swimming, sweating or towelling off. Cloudy weather still counts: a large share of UV gets through, and sand and water bounce rays back.
+Choose broad-spectrum sunscreen (UVA and UVB) with at least SPF 30. Apply it generously 15 to 30 minutes before you go out, with extra care for the face, ears, hands, feet and the backs of the knees. Reapply about every two hours, and sooner after swimming, sweating or towelling off. Cloudy weather still counts: a large share of UV gets through, and sand and water bounce rays back.
 
 ## Babies and sensitive skin
 
@@ -43,6 +43,6 @@ Offer water often, even if your child doesn’t ask. Redness, crankiness or over
 
 ## Don’t forget reflection and altitude
 
-On the beach, by the pool or on snow, UV bounces back; you can burn faster than you think, even near the edge of shade. At higher altitudes the sun is stronger. Pack enough cream (minis for the day bag, a bigger tube for the room) and set a phone reminder to reapply — because between buckets and waves you forget the clock.
+On the beach, by the pool or on snow, UV bounces back, so you can burn faster than you think, even at the edge of the shade. At higher altitudes the sun is stronger. Pack enough cream (minis for the day bag, a bigger tube for the room) and set a phone reminder to reapply. Between buckets and waves, you'll forget the clock.
 
 Want a destination where shade, timing and kid-friendly spots are already in the plan? [Request a proposal](/en/request). No service fee, quote within five working days.

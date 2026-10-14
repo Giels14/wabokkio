@@ -1,18 +1,18 @@
 export default {
-  meta: { siteTitle: 'Wabokkio · Familiereizen op maat', description: 'Wabokkio zoekt de familiekamer die echt bij jullie gezin past. Persoonlijk advies van reizende ouders, tegen reisagenttarieven.' },
+  meta: { siteTitle: 'Wabokkio · Familiereizen op maat', description: 'Wabokkio zoekt de familiekamer die bij jullie gezin past. Persoonlijk advies van reizende ouders, tegen reisagenttarieven.' },
   nav: { destinations: 'Bestemmingen', blog: 'Blog', about: 'Over ons', cta: 'Vraag offerte aan', switchLabel: 'English', switchAria: 'Switch to English', skip: 'Naar inhoud', menu: 'Hoofdmenu', home: 'Wabokkio, naar home' },
-  hero: { eyebrow: 'Familiereizen op maat', title: 'De familiekamer die écht bij jullie gezin past', lead: 'Vertel ons wie er meegaat en wat jullie zoeken. Wij, reizende ouders, komen binnen 5 werkdagen met een persoonlijk voorstel tegen reisagenttarieven.', imageAlt: 'Gezin op vakantie', featureAlt: 'Kinderen spelen op het strand' },
+  hero: { eyebrow: 'Familiereizen op maat', title: 'De familiekamer die bij jullie gezin past', lead: 'Vertel ons wie er meegaat en wat jullie zoeken. Wij, reizende ouders, komen binnen 5 werkdagen met een persoonlijk voorstel tegen reisagenttarieven.', imageAlt: 'Gezin op vakantie', featureAlt: 'Kinderen spelen op het strand' },
   trust: { aria: 'Waarom Wabokkio', iata: 'Geregistreerd reisagent · IATA TIDS', quote: 'Offerte binnen 5 werkdagen', fee: 'Geen servicefee', advice: 'Persoonlijk advies van reizende ouders' },
   resorts: { title: 'Onze favoriete familieresorts', lead: 'Een greep uit de resorts die we graag aanraden. Prijzen hangen af van jullie data en gezin, daarom maken we altijd een offerte op maat.', all: 'Alle bestemmingen', ask: 'Vraag prijs aan', moodPhoto: 'sfeerbeeld van de bestemming, niet het resort', illustration: 'Illustratie' },
   how: { title: 'Hoe het werkt', steps: [
     ['Vertel wie er meegaat', 'Bestemming, data, kamers en de leeftijden van de kinderen. Meer hebben we niet nodig.'],
-    ['Wij zoeken uit', 'We vergelijken kamers, kinderclubs en tarieven en kiezen wat echt bij jullie past.'],
+    ['Wij zoeken uit', 'We vergelijken kamers, kinderclubs en tarieven en kiezen wat bij jullie past.'],
     ['Je krijgt een voorstel', 'Binnen 5 werkdagen een persoonlijke offerte met eerlijk advies. Vrijblijvend.'],
     ['Genieten', 'Akkoord? Dan boeken wij het voor jullie. Jullie hoeven alleen nog de koffers te pakken.'],
   ] },
   creditsPage: { intro: 'Foto’s op deze site zijn algemene sfeerbeelden van de bestemmingen, geen foto’s van de genoemde resorts. Met dank aan de fotografen:', photo: 'Foto', by: 'Fotograaf', license: 'Licentie', note: 'De fotografen en de mensen op de foto’s zijn niet verbonden aan Wabokkio en onderschrijven onze diensten niet.' },
   partners: 'Onze partners',
-  destinations: { title: 'Bestemmingen', description: 'Familieresorts die Wabokkio aanraadt in Spanje, Portugal, Griekenland, Turkije, Marokko en Nederland.', lead: 'Resorts die we kennen en graag aanraden voor gezinnen. Staat jullie droombestemming er niet bij? Vraag het gewoon aan, we zoeken ook daarbuiten.' },
+  destinations: { title: 'Bestemmingen', description: 'Familieresorts die Wabokkio aanraadt in Spanje, Portugal, Griekenland, Turkije, Marokko en Nederland.', lead: 'Resorts die we kennen en graag aanraden voor gezinnen. Staat jullie droombestemming er niet bij? Vraag het ons, we zoeken ook daarbuiten.' },
   form: {
     title: 'Waar willen jullie naartoe?', destination: 'Bestemming of resort', destinationPh: 'Bijv. Mallorca of Ikos Porto Petro', arrival: 'Aankomst', departure: 'Vertrek',
     rooms: 'Kamers en reizigers', room: 'Kamer', adults: 'Volwassenen', children: 'Kinderen', addRoom: '+ Kamer toevoegen', removeRoom: 'Verwijder',

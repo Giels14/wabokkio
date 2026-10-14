@@ -18,15 +18,15 @@ Een peuter op het strand is magie: eerste golfjes, emmertjes, natte broekjes van
 
 ## Schaduw eerst, daarna spelen
 
-Zet eerst de parasol, strandtent of schaduwdoek neer. Daarna pas zwemkleding, hoedje en spel. Voor baby’s onder de zes maanden is schaduw de hoofdzaak; voor peuters blijft een schaduwbasis de plek om te eten, te dutten en af te koelen. Kies een plek dicht bij toiletten of een uitgang — peuters hebben timing.
+Zet eerst de parasol, strandtent of schaduwdoek neer. Zwemkleding, hoedje en spel komen daarna. Voor baby’s onder de zes maanden is schaduw de belangrijkste bescherming. Voor peuters blijft de schaduwplek de plek om te eten, te dutten en af te koelen. Kies een plek dicht bij de toiletten of een uitgang, want een peuter meldt een plasnoodgeval tien seconden van tevoren.
 
 ## Ga vroeg of laat
 
-De felle middaguren zijn zwaar voor kleine lijfjes. Vroege ochtend of late middag betekent zachter licht, koeler zand en vaak een rustiger strand. Middag mag een dutje op de kamer zijn. Ja, echt: dat is geen verloren vakantiedag, dat is strategie.
+De felle middaguren zijn zwaar voor kleine lijfjes. Vroege ochtend of late middag betekent zachter licht, koeler zand en vaak een rustiger strand. Houd 's middags een dutje op de kamer. Daarmee verlies je geen vakantiedag, je plant hem slim.
 
 ## Spullen die wél werken op zand
 
-Een gewone buggy zakt weg. Handiger: draagzak voor de loop over het zand, of een strandwagen voor tas én kind. Waterlichtjes of antislip-strandschoentjes beschermen tegen hete stenen. Natte zwemluiers lekken — pak een gewone luier voor de autorit terug. Mesh-tas of natte-tas schudt zand eruit zonder drama.
+Een gewone buggy zakt weg in het zand. Neem een draagzak voor de loop over het strand, of een strandwagen voor tas én kind. Waterschoentjes of antislip-strandschoentjes beschermen tegen hete stenen. Zwemluiers lekken, dus pak een gewone luier in voor de terugrit. Met een mesh-tas of natte-tas schud je het zand er meteen uit.
 
 ## Eten en drinken mee
 
@@ -34,7 +34,7 @@ Peuters vergeten te drinken als ze graven. Neem water mee en bied het vaak aan. 
 
 ## Grenzen in het zand
 
-Leg met handdoeken of tassen een “thuisbasis” neer. Blijf binnen armlengte bij het water — golfjes zijn leuk, maar onvoorspelbaar. Een zwemvest dat écht past (geen luchtbandjes als enige bescherming) kan helpen bij oudere peuters die al durven.
+Leg met handdoeken of tassen een “thuisbasis” neer. Blijf binnen armlengte bij het water: golfjes zijn leuk, maar onvoorspelbaar. Durft je oudere peuter al het water in, dan helpt een goed passend zwemvest meer dan alleen zwembandjes.
 
 ## Pak de avond van tevoren
 

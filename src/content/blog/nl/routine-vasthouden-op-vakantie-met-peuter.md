@@ -1,6 +1,6 @@
 ---
 title: "Routine vasthouden op vakantie met een peuter (zonder vakantiepolitieman te worden)"
-description: "Welke onderdelen van het thuisschema wél meenemen — en waar je soepel mag zijn — voor een relaxtere peutervakantie."
+description: "Welke onderdelen van het thuisschema je meeneemt en waar je soepel kunt zijn, voor een relaxtere peutervakantie."
 date: 2026-10-05
 slug: routine-vasthouden-op-vakantie-met-peuter
 lang: nl
@@ -14,7 +14,7 @@ tags:
 
 # Routine vasthouden op vakantie met een peuter (zonder vakantiepolitieman te worden)
 
-Vakantie betekent geen schema… tot je peuter om 5.17 uur start met zingen. Een beetje routine is geen saaiheid — het is de lijm die avontuur mogelijk maakt. De truc: ankers vasthouden, details loslaten.
+Vakantie betekent geen schema… tot je peuter om 5.17 uur begint te zingen. Een beetje routine houdt het avontuur bij elkaar. Houd de ankers vast en laat de details los.
 
 ## Drie ankers meenemen
 
@@ -30,7 +30,7 @@ Plan het “grote” uitstapje in de ochtendenergie. Na lunch terug naar de kame
 
 ## Flexibel waar het mag
 
-Andere ontbijttijden, een later diner, een keertje dutten in de buggy in plaats van het bed: allemaal oké. Mist je peuter een dutje? Verschuif bedtijd een halfuur tot uur naar voren in plaats van te forceren tot “vakantiebedtijd”. Screens mogen soms een rustmoment redden — jij bepaalt de grens, niet het schuldgevoel.
+Andere ontbijttijden, een later diner, een keertje dutten in de buggy in plaats van het bed: allemaal oké. Mist je peuter een dutje? Vervroeg de bedtijd met een halfuur tot een uur in plaats van een “vakantiebedtijd” te forceren. Een schermpje mag af en toe een rustmoment redden. Jij bepaalt de grens, en het schuldgevoel mag thuisblijven.
 
 ## Reisbed als vaste slaapplek
 
@@ -38,11 +38,11 @@ Zet het reisbed of de campingbed-opstelling zo snel mogelijk klaar bij aankomst.
 
 ## Terug naar huis
 
-De eerste dagen thuis mag het schema weer strakker. Peuters veren vaak snel terug als de ankers herkenbaar zijn. Jij ook — na koffie.
+Thuis kun je het schema de eerste dagen weer strakker maken. Peuters veren vaak snel terug als de ankers herkenbaar zijn. Jij ook, na een kop koffie.
 
 
 ## Ouders hebben ook een mini-routine nodig
 
-Wissel avonddiensten: één ouder doet bedtijd, de ander ruimt op of doucht. Plant een kort “volwassen halfuurtje” ná de peuterslaap — thee op het balkon, een serieaflevering met oortjes. Uitgeruste ouders houden ankers makkelijker vast. En als een nacht misgaat: de volgende dag opnieuw beginnen is genoeg. Perfecte vakanties bestaan niet; genoeg-goed wel.
+Wissel de avonddiensten af: de ene ouder doet bedtijd, de andere ruimt op of doucht. Plan een kort “volwassen halfuurtje” als de peuter slaapt, met thee op het balkon of een aflevering met oortjes in. Uitgeruste ouders houden de ankers makkelijker vast. Gaat een nacht mis, begin dan de volgende dag opnieuw. Je vakantie hoeft niet perfect te zijn om goed te zijn.
 
 Wil je een vakantie die om jullie ritme heen is gebouwd, niet andersom? [Vul het aanvraagformulier in](/aanvraag). Geen prijzen op de site, geen servicekosten, persoonlijke offerte binnen vijf werkdagen.

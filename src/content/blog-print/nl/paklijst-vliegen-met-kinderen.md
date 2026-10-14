@@ -6,7 +6,7 @@ date: 2026-10-14
 ---
 
 # Paklijst vliegen met kinderen
-*Wabokkio – Gezinsreizen, zonder gedoe*
+*Wabokkio · Gezinsreizen, zonder gedoe*
 
 **Documenten & geld**
 - [ ] Paspoort/ID per gezinslid

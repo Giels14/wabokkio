@@ -22,15 +22,15 @@ Pick a compact resort or a place where room, breakfast, pool and beach sit close
 
 ## Sleep first, splash later
 
-Check that a cot is available — and reserved, not “maybe on the day”. Blackout curtains, a quieter wing and a lift or ground floor make bedtime kinder. A mini-fridge for milk and snacks is gold.
+Check that the resort has a cot for you and has reserved it, not “maybe on the day”. Blackout curtains, a quieter wing and a lift or ground-floor room make bedtime easier. A mini-fridge for milk and snacks is gold.
 
 ## Water on a toddler scale
 
-Ask how deep the kids’ pool really is. A splash pad or very shallow basin is often better for toddlers than a big “kids pool” where older children dive. Shade by the water isn’t a luxury: an umbrella or covered area saves sunburn and meltdowns.
+Ask how deep the kids’ pool is. A splash pad or very shallow basin is often better for toddlers than a big “kids pool” where older children dive. Look for shade by the water: an umbrella or covered area saves you sunburn and meltdowns.
 
 ## Food without the circus
 
-Flexible buffet or child-friendly hours, high chairs and the option of simple late snacks help a lot. All-inclusive can be lovely with a toddler — less hauling bags around — as long as the grounds aren’t huge and there are enough quiet corners.
+Flexible buffet hours, high chairs and simple late snacks make mealtimes easier. All-inclusive can be lovely with a toddler because you carry fewer bags around, as long as the grounds aren’t huge and you can find quiet corners.
 
 ## Kids’ club? Check the age
 

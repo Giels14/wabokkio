@@ -169,7 +169,7 @@ Most airlines let you bring a pushchair free of charge, and you can often use it
 - [ ] Get to the airport in good time
 - [ ] Ask at security whether there's a family lane
 - [ ] Let children burn off energy at the airport before boarding
-- [ ] Do a last toilet trip or nappy change just before boarding
+- [ ] Do a last toilet trip or nappy change right before boarding
 - [ ] Keep passports and boarding passes together in one pocket
 - [ ] Put your name and phone number on a wristband or note for young children
 - [ ] Plan in quiet moments, and don't expect too much of yourself

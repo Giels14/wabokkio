@@ -18,7 +18,7 @@ Honger maakt van de liefste peuter een kleine storm. Op 10.000 meter hoogte wil 
 
 ## Kies bekend boven nieuw
 
-Vliegdag is geen moment om quinoa-chips te introduceren. Neem mee wat je kind thuis ook lust. Vertrouwde smaken = minder protest. Bewaar één “bijzondere” snack — iets kleins en spannends — voor het lastigste moment: de boardingrij, turbulentie of het uur vóór landen.
+Op de vliegdag introduceer je geen quinoa-chips. Neem mee wat je kind thuis ook lust; vertrouwde smaken betekenen minder protest. Bewaar één kleine, spannende “bijzondere” snack voor het lastigste moment: de rij bij het boarden, turbulentie of het uur vóór de landing.
 
 ## Droog, stevig, weinig kruimels
 
@@ -26,7 +26,7 @@ Winnaars in de cabine: rijstwafels, soepstengels, crackers, rozijnen, stukjes ka
 
 ## Drinken: leeg door de controle
 
-Neem lege drinkflessen en bekers mee en vul ze na de security. Babyvoeding en melk hebben vaak uitzonderingen, maar regels verschillen per luchthaven — check het van tevoren. Tijdens stijgen en dalen helpt iets om op te zuigen of te kauwen: een speen, een slokje drinken of een kauwhapje, zodat oren makkelijker egaliseren.
+Neem lege drinkflessen en bekers mee en vul ze na de security. Voor babyvoeding en melk gelden vaak uitzonderingen, maar de regels verschillen per luchthaven, dus check ze van tevoren. Tijdens het opstijgen en dalen helpt iets om op te zuigen of te kauwen: een speen, een slokje drinken of een kauwhapje. Zo klaren de oren makkelijker.
 
 ## Rotatie in plaats van buffet
 
@@ -34,7 +34,7 @@ Haal niet de hele voorraad in één keer tevoorschijn. Eén bakje, daarna iets a
 
 ## Extra is geen overdaad
 
-Vertragingen gebeuren. Reken ruim: liever twee zakjes te veel dan een huilende peuter terwijl de gate “boarding delayed” toont. En pak een doekje en billendoekjes bij de snacks — plakhandjes zijn gegarandeerd.
+Vertragingen gebeuren. Neem ruim mee: liever twee zakjes te veel dan een huilende peuter terwijl het scherm bij de gate “boarding delayed” toont. Stop ook een doekje en billendoekjes bij de snacks, want je krijgt plakhandjes.
 
 ## Ouders mogen ook eten
 
@@ -43,6 +43,6 @@ Pak voor jezelf iets eiwitrijks en niet-kruimeligs. Een verzadigde ouder reageer
 
 ## Security en timing
 
-Pak snacks in doorzichtige, makkelijk te openen bakjes zodat je niet met deksels zit te stoeien in een krappe stoel. Geef een klein hapje vóór het boarden, zodat de honger niet piekt tijdens de veiligheidsdemo. Bij oordruk of doorkomende tanden is een kauwhapje klaar voor de daling goud waard. En onthoud: de trolley is bonus — jouw voorraad is het plan.
+Pak snacks in doorzichtige, makkelijk te openen bakjes, zodat je niet met deksels zit te stoeien in een krappe stoel. Geef een klein hapje vóór het boarden, zodat de honger niet piekt tijdens de veiligheidsdemo. Krijgt je peuter tandjes of last van oordruk, houd dan een kauwhapje klaar voor de daling. Reken op je eigen voorraad en zie het eten uit de trolley als bonus.
 
 Wil je een vlucht en verblijf waarbij snacks, transfers en dutjes in het plan zitten? [Vraag vrijblijvend een voorstel aan](/aanvraag). Geen prijzen online, geen servicekosten, offerte binnen vijf werkdagen.
