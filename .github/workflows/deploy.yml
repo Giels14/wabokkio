@@ -64,6 +64,7 @@ jobs:
           HEAD_REF: ${{ github.head_ref }}
           REF_NAME: ${{ github.ref_name }}
         run: |
+          set -o pipefail
           if [ "$EVENT_NAME" = "pull_request" ]; then
             RAW="$HEAD_REF"
           else
@@ -71,5 +72,10 @@ jobs:
           fi
           BRANCH=$(printf '%s' "$RAW" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g; s/-\+/-/g; s/^-//; s/-$//')
           echo "Preview branch: $BRANCH"
-          npx --yes wrangler@4 pages deploy dist --project-name wabokkio --branch "$BRANCH" --commit-hash "$GITHUB_SHA" --commit-message "$BRANCH"
-          echo "Preview: https://${BRANCH}.wabokkio.pages.dev"
+          npx --yes wrangler@4 pages deploy dist --project-name wabokkio --branch "$BRANCH" --commit-hash "$GITHUB_SHA" --commit-message "$BRANCH" | tee deploy-out.txt
+          ALIAS=$(sed -n 's/.*Deployment alias URL: //p' deploy-out.txt | tr -d '[:space:]' | tail -n 1)
+          if [ -n "$ALIAS" ]; then
+            echo "Preview: $ALIAS"
+          else
+            echo "Preview: https://${BRANCH}.wabokkio.pages.dev"
+          fi
