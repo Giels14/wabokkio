@@ -16,9 +16,10 @@ Wabokkio B.V. · KvK 58114262 · Groot Emiclaer 157, 3822 TL Amersfoort · IATA 
 | `src/config.ts` | `SHOW_PARTNERS` (standaard `false`): strook "Onze partners" (Ratehawk, Expedia TAAP, alleen tekst) boven de footer op home |
 | `public/wabokkio-logo-*.svg`, `favicon*` | Merkbestanden uit `/workspace/wabokkio/brand/`: `header` (header), `stacked-white` (donkere footer), `header-white` en `stacked` (reserve, mail/print). Omgezet met `python scripts/svg-text-to-paths.py <in.svg> <out.svg> wabokkio-mark-vector.svg`: tekst wordt paden (Nunito 800 / Inter 400) en de ingesloten raster-pinguïn wordt de vector-mark. Bij nieuwe logo's opnieuw draaien. |
 | `src/styles/tokens.css` | Merktokens (kleuren, fonts, radius) |
-| `public/js/form.js` | Formulierlogica (kamers, leeftijden kinderen, prefill vanuit "Vraag prijs aan") |
+| `src/data/hotels.json` | Hotels die Wabokkio kan boeken. Nieuw hotel = een object erbij, plus een `.g-<slug>` in `src/styles/gradients.css` als je een eigen kleur wilt. `image` en `imageCredit` leeg = plaatshouder. Een foto alleen met bronvermelding. |
+| `public/js/form.js` | Formulierlogica (leeftijden kinderen, prefill vanuit "Vraag prijs aan" en `?hotel=`) |
 | `public/_headers` | Security headers (CSP, HSTS, nosniff, Referrer-Policy, Permissions-Policy, frame-ancestors 'none') |
-| `functions/api/aanvraag.ts` | Validatie, honeypot, Turnstile, opslag in D1, mails via Resend |
+| `functions/api/aanvraag.ts` | Validatie, honeypot, Turnstile, opslag in D1, mail naar Wabokkio via Resend |
 | `db/schema.sql` | D1-schema |
 | `worker/` | Cron-Worker die aanvragen ouder dan 12 maanden verwijdert |
 
@@ -30,9 +31,9 @@ Er staan nergens prijzen op de site: alles is "op aanvraag" / "Vraag prijs aan".
   - `src/i18n/en.ts` – alle knoppen, formulier, home, foutmeldingen in de browser
   - `src/data/site.ts` – de `en:`-velden van de resortkaarten
   - `src/content/en/about.md`, `privacy.md`, `terms.md`
-  - `functions/api/aanvraag.ts` – Engelse foutmeldingen en bevestigingsmail (zoek op `en ?`)
+  - `functions/api/aanvraag.ts` – Engelse foutmeldingen (zoek op `en ?`). De mail naar Wabokkio is altijd Nederlands.
 - Engelse privacy en voorwaarden tonen bovenaan: "This is a translation. In case of differences, the Dutch version prevails." met een link naar de Nederlandse pagina.
-- Het formulier stuurt `taal` mee; de function antwoordt in die taal, stuurt de bevestiging in die taal en zet `[EN]` in het onderwerp van de notificatie. De taal wordt in D1 opgeslagen (kolom `taal`).
+- Het formulier stuurt `taal` mee. De function antwoordt in die taal en zet `[EN]` in het onderwerp van de mail naar Wabokkio. Die mail zelf is Nederlands. De taal wordt in D1 opgeslagen (kolom `taal`). Er gaat geen automatische mail naar de klant.
 
 ## Foto's
 Zet foto's in `src/assets/photos/` (jpg, jpeg, webp, avif of png; liefst minstens 1600 px breed, liggend). Astro maakt er automatisch webp in meerdere formaten van, met lazy loading en alt-tekst. Ontbreekt een bestand, dan blijft de gradient met icoon staan. **Gebruik alleen eigen foto's of foto's met licentie, geen foto's van hotelwebsites.**
@@ -82,7 +83,7 @@ npx wrangler pages dev dist
    | Naam | Type | Waarde |
    |---|---|---|
    | `RESEND_API_KEY` | Secret | API-key uit Resend (alleen "sending access", domein send.wabokkio.nl) |
-   | `MAIL_FROM` | Variable | `Wabokkio <aanvraag@wabokkio.nl>` |
+   | `MAIL_FROM` | Variable | `Wabokkio <travel@wabokkio.nl>` |
    | `MAIL_TO` | Variable | `travel@wabokkio.nl` |
    | `TURNSTILE_SECRET_KEY` | Secret | Turnstile secret key (leeg = check uit) |
    | `PUBLIC_TURNSTILE_SITE_KEY` | Build-variable | Turnstile site key; zonder deze waarde wordt de widget niet getoond |
@@ -96,10 +97,12 @@ npx wrangler pages dev dist
    Hij voert uit: `DELETE FROM aanvragen WHERE created_at < datetime('now','-12 months')`. Logs: `npx wrangler tail wabokkio-aanvragen-cleanup`.
 
 ## Formulier en verwerking
-- Per kamer aantal volwassenen en kinderen; per kind alleen de leeftijd (geen namen/geboortedata).
+- Het formulier staat op `/aanvraag/` en `/en/request/`, en ook op de homepage. Aantal volwassenen, en per kind alleen de leeftijd (geen namen of geboortedata). Budget is optioneel. Akkoord met de privacyverklaring is verplicht.
+- Een hotelkaart opent het formulier met `?hotel=` zodat de naam al ingevuld is.
 - Werkt met JavaScript (fetch → `/bedankt/`) en zonder (gewone POST → 303 naar `/bedankt/`).
 - Honeypotveld `website`: bots krijgen "ok" maar er wordt niets opgeslagen of gemaild.
-- Na opslaan in D1: notificatie naar `MAIL_TO` (reply-to = klant) en bevestiging naar de familie ("reactie binnen 5 werkdagen"). Mislukt Resend, dan staat de aanvraag wél in D1 en wordt de fout gelogd.
+- Na opslaan in D1: één mail naar `MAIL_TO` (from = `MAIL_FROM`, reply-to = de klant). Er gaat nog geen automatische mail naar de klant. Mislukt Resend, dan staat de aanvraag wél in D1 en wordt de fout gelogd.
+- Bestaande database: eenmalig `npx wrangler d1 execute wabokkio --remote --file db/migrations-0003-budget.sql`. Zonder die kolom slaat de function de aanvraag alsnog op, alleen zonder budgetkolom. Het budget staat dan wel in de mail.
 - Aanvragen bekijken: `npx wrangler d1 execute wabokkio --remote --command "SELECT * FROM aanvragen ORDER BY created_at DESC LIMIT 20"`.
 
 ## DNS-plan
@@ -148,7 +151,7 @@ NL-overzicht op `/blog/`, EN op `/en/blog/`. Posts staan als markdown in een con
    ```
 
    In plaats van `translationKey` mag ook een `hreflang:`-blok met `nl:`/`en:`-paden (zoals in de aangeleverde bestanden).
-3. De eerste `# Kop` in de tekst wordt weggelaten (de titel komt uit de frontmatter). Links naar `/aanvraag` en `/en/request` worden automatisch `/#aanvraag` en `/en/#aanvraag`. Onderaan elke post staat al een knop naar het aanvraagformulier.
+3. De eerste `# Kop` in de tekst wordt weggelaten (de titel komt uit de frontmatter). Links naar `/aanvraag` en `/en/request` blijven naar het aanvraagformulier wijzen. Onderaan elke post staat al een knop naar het formulier op de homepage.
 4. Optionele printversie: zet een bestand met **dezelfde bestandsnaam** in `src/content/blog-print/nl/` of `src/content/blog-print/en/` (frontmatter minimaal `title` en `lang`). Dan verschijnt er een knop "Printversie" en een pagina `/blog/<slug>/print/` (noindex, print-CSS op A4).
 5. Commit en push naar `main`; GitHub Actions bouwt en deployt. Overzicht, sitemap (`/sitemap.xml`), hreflang en Article-JSON-LD gaan vanzelf.
 

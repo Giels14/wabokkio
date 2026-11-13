@@ -1,0 +1,27 @@
+---
+import { hotelPhoto, type Hotel } from '../data/hotels';
+import { t, r, type Lang } from '../i18n';
+const { hotel, lang } = Astro.props as { hotel: Hotel; lang: Lang };
+const d = t(lang);
+const photo = hotelPhoto(hotel);
+const quote = `${r('request', lang)}?hotel=${encodeURIComponent(hotel.name)}`;
+---
+<article class="card">
+  <div class={`card-img g-${hotel.slug}`} role={photo ? undefined : 'img'} aria-label={photo ? undefined : `${d.hotels.placeholder} ${hotel.name}`}>
+    {photo
+      ? <img src={photo.image} alt={`${hotel.name}, ${hotel.region[lang]}`} class="card-photo" loading="lazy" decoding="async" />
+      : <span class="card-icon" aria-hidden="true">{hotel.icon}</span>}
+    <span class="card-country">{hotel.country[lang]}</span>
+    {photo
+      ? null
+      : <span class="card-placeholder-note">{d.hotels.placeholder}</span>}
+  </div>
+  <div class="card-body">
+    <h3>{hotel.name}</h3>
+    <p class="card-place">{hotel.region[lang]}</p>
+    <p>{hotel.description[lang]}</p>
+    <p class="card-strength"><strong>{d.hotels.strengths}</strong> {hotel.strengths[lang]}</p>
+    {photo ? <p class="photo-credit">{d.hotels.photoCredit}: {photo.credit}</p> : null}
+    <a class="btn btn-secondary" href={quote}>{d.hotels.quote}</a>
+  </div>
+</article>

@@ -1,10 +1,14 @@
-# Bouwt de site en deployt naar Cloudflare Pages (project 'wabokkio') bij elke push naar main.
+# Bouwt de site en deployt naar Cloudflare Pages (project 'wabokkio').
+# Push naar main, de maandelijkse cron en workflow_dispatch publiceren productie (--branch main).
+# Pull requests en pushes naar andere branches krijgen een preview (--branch <branch>).
 # Vereist repo-secret CLOUDFLARE_API_TOKEN (account-token met alleen 'Cloudflare Pages: Edit').
 name: Deploy naar Cloudflare Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - "**"
+  pull_request:
   workflow_dispatch:
   # Elke maandag 07:05 UTC: publiceert vooruitgedateerde posts zonder push
   schedule:
@@ -13,13 +17,13 @@ on:
 permissions:
   contents: read
 
-concurrency:
-  group: pages-deploy
-  cancel-in-progress: false
-
 jobs:
   deploy:
+    if: github.event_name != 'pull_request' && (github.event_name != 'push' || github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
+    concurrency:
+      group: pages-deploy-production
+      cancel-in-progress: false
     env:
       CLOUDFLARE_ACCOUNT_ID: 2d1c0310ba071803dcf00f6ca4317ee4
     steps:
@@ -36,3 +40,36 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: npx --yes wrangler@4 pages deploy dist --project-name wabokkio --branch main --commit-hash "$GITHUB_SHA" --commit-message "${GITHUB_SHA::7}"
+
+  preview:
+    if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.ref != 'refs/heads/main')
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages-preview-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
+    env:
+      CLOUDFLARE_ACCOUNT_ID: 2d1c0310ba071803dcf00f6ca4317ee4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Deploy preview
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          EVENT_NAME: ${{ github.event_name }}
+          HEAD_REF: ${{ github.head_ref }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            RAW="$HEAD_REF"
+          else
+            RAW="$REF_NAME"
+          fi
+          BRANCH=$(printf '%s' "$RAW" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g; s/-\+/-/g; s/^-//; s/-$//')
+          echo "Preview branch: $BRANCH"
+          npx --yes wrangler@4 pages deploy dist --project-name wabokkio --branch "$BRANCH" --commit-hash "$GITHUB_SHA" --commit-message "$BRANCH"
+          echo "Preview: https://${BRANCH}.wabokkio.pages.dev"
