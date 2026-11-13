@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import HotelCard from '../components/HotelCard.astro';
+import { hotels } from '../data/hotels';
+import { t, type Lang } from '../i18n';
+const { lang } = Astro.props as { lang: Lang };
+const d = t(lang).hotels;
+---
+<Base lang={lang} page="hotels" title={d.title} description={d.description}>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>{d.title}</h1>
+      <p class="lead">{d.lead}</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="cards">{hotels.map((hotel) => <HotelCard hotel={hotel} lang={lang} />)}</div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "eagles-villas",
+    "name": "Eagles Villas",
+    "region": { "nl": "Ouranoupoli, Halkidiki", "en": "Ouranoupoli, Halkidiki" },
+    "country": { "nl": "Griekenland", "en": "Greece" },
+    "description": {
+      "nl": "42 villa's op een heuvel in Ouranoupoli. Elke villa heeft een eigen verwarmde plunge pool en een tuin. Het resort heeft een eigen strand.",
+      "en": "42 villas on a hill in Ouranoupoli. Each villa has its own heated plunge pool and a garden. The resort has a private beach."
+    },
+    "strengths": {
+      "nl": "Een gezin heeft een eigen villa, met een kleine pool en een tuin. De clubauto brengt je over het terrein.",
+      "en": "A family gets its own villa, with a small pool and a garden. A club car takes you around the grounds."
+    },
+    "sourceUrl": "https://www.eaglesresort.gr/eagles-villas",
+    "image": "",
+    "imageCredit": "",
+    "gradient": "linear-gradient(135deg,#14204A 0%,#3CB371 100%)",
+    "icon": "🏡"
+  },
+  {
+    "slug": "eagles-palace",
+    "name": "Eagles Palace",
+    "region": { "nl": "Halkidiki", "en": "Halkidiki" },
+    "country": { "nl": "Griekenland", "en": "Greece" },
+    "description": {
+      "nl": "Vijfsterren strandresort in Halkidiki, naast het kloostergebied van Athos. Kamers, suites en bungalows, en een eigen zandstrand.",
+      "en": "A five-star beach resort in Halkidiki, next to the monastic state of Mount Athos. Rooms, suites and bungalows, plus a private sandy beach."
+    },
+    "strengths": {
+      "nl": "Het resort heeft een kidsclub voor kinderen van 4 maanden tot 12 jaar, met een programma per leeftijd.",
+      "en": "The resort runs a kids' club for children from 4 months to 12 years, with activities by age."
+    },
+    "sourceUrl": "https://www.eaglesresort.gr/eagles-palace",
+    "image": "",
+    "imageCredit": "",
+    "gradient": "linear-gradient(135deg,#2F6BFF 0%,#5FD3FF 100%)",
+    "icon": "🏖️"
+  },
+  {
+    "slug": "lopesan-baobab",
+    "name": "Lopesan Baobab",
+    "region": { "nl": "Meloneras, Gran Canaria", "en": "Meloneras, Gran Canaria" },
+    "country": { "nl": "Spanje", "en": "Spain" },
+    "description": {
+      "nl": "Vijfsterrenresort in Meloneras op Gran Canaria, met tuinen, meerdere zwembaden en een miniclub.",
+      "en": "A five-star resort in Meloneras, Gran Canaria, with gardens, several pools and a mini club."
+    },
+    "strengths": {
+      "nl": "Twee ondiepe kinderzwembaden (30 en 50 cm) en een miniclub. Oppas kan tegen betaling.",
+      "en": "Two shallow children's pools (30 cm and 50 cm) and a mini club. A nanny is available at an extra charge."
+    },
+    "sourceUrl": "https://www.lopesan.com/en/hotels/spain/gran-canaria/meloneras/baobab-resort",
+    "image": "",
+    "imageCredit": "",
+    "gradient": "linear-gradient(135deg,#FF9A2E 0%,#3CB371 100%)",
+    "icon": "🌴"
+  }
+]

@@ -4,7 +4,7 @@ import { t, r, type Lang, type PageKey } from '../i18n';
 const { lang, page, alternates } = Astro.props as { lang: Lang; page: PageKey; alternates?: Partial<Record<Lang, string>> };
 const d = t(lang);
 const other: Lang = lang === 'nl' ? 'en' : 'nl';
-const links: [PageKey, string][] = [['destinations', d.nav.destinations], ['blog', d.nav.blog], ['about', d.nav.about]];
+const links: [PageKey, string][] = [['destinations', d.nav.destinations], ['hotels', d.nav.hotels], ['blog', d.nav.blog], ['about', d.nav.about]];
 const switchHref = alternates ? (alternates[other] ?? r(page === 'notFound' ? 'home' : page, other)) : page === 'notFound' ? r('home', other) : r(page, other);
 ---
 <header class="site-header">
@@ -13,7 +13,7 @@ const switchHref = alternates ? (alternates[other] ?? r(page === 'notFound' ? 'h
     <nav aria-label={d.nav.menu}>
       {links.map(([k, label]) => <a href={r(k, lang)} aria-current={page === k ? 'page' : undefined}>{label}</a>)}
       <a href={switchHref} hreflang={other} lang={other} class="lang-switch" aria-label={d.nav.switchAria}><span class="lang-full">{d.nav.switchLabel}</span><span class="lang-short">{other.toUpperCase()}</span></a>
-      <a href={`${r('home', lang)}#aanvraag`} class="btn btn-primary btn-sm">{d.nav.cta}</a>
+      <a href={r('request', lang)} class="btn btn-primary btn-sm">{d.nav.cta}</a>
     </nav>
   </div>
 </header>

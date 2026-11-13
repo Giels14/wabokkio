@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import EnquiryForm from '../components/EnquiryForm.astro';
+import { t, type Lang } from '../i18n';
+const { lang } = Astro.props as { lang: Lang };
+const d = t(lang).form;
+---
+<Base lang={lang} page="request" title={d.pageTitle} description={d.pageLead}>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>{d.pageTitle}</h1>
+      <p class="lead">{d.pageLead}</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap request-wrap">
+      <EnquiryForm lang={lang} showTitle={false} />
+    </div>
+  </section>
+</Base>
